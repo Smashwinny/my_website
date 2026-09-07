@@ -40,3 +40,5 @@ Element world / 掌中万象:
 Portrait derived with image generation from the site owner's supplied sample2.jpg; sample.jpg and sample.mp4 were used as style references only.
 No source news footage, logos, captions or public-figure likeness is included in this theme.
 Fire, water and lightning effects: original real-time Canvas code. Optimized portrait: /models/elements/hero.webp.
+
+Green titan variant: /models/elements/hero-titan.webp, generated from the existing owner-reference portrait with preserved identity and a stronger chiaroscuro treatment. Original portrait retained for rollback.
