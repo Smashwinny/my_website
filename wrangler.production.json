@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "geniusqi-world",
+  "account_id": "d4e7b03941632155208f89495301b045",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "no_bundle": true,
+  "rules": [{"type": "ESModule", "globs": ["**/*.js", "**/*.mjs"]}],
+  "assets": {"directory": "dist/client"},
+  "observability": {"enabled": true},
+  "routes": [
+    {"pattern": "geniusqi.com", "custom_domain": true},
+    {"pattern": "www.geniusqi.com", "custom_domain": true}
+  ]
+}

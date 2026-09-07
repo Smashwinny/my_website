@@ -53,7 +53,13 @@ codex login
 
 CLI 使用 `exec --ignore-user-config --ignore-rules --ephemeral --sandbox read-only`，禁用 shell、apply_patch 和 web search，提示通过 stdin 传入；每次调用在独立临时目录运行。最近 12 条消息随请求传入，刷新页面清空对话。单进程每分钟最多 6 次、仅允许 1 个并发，95 秒超时。健康检查只证明桥接进程运行，不证明 Codex 已登录或能够回复。
 
-依据：[Codex 非交互模式官方文档](https://developers.openai.com/codex/noninteractive)。已对本机 `codex exec --help` 核实参数。尚需在专用运行环境完成真实对话验证；此代码不宣称当前网站已连接你的 Codex。
+依据：[Codex 非交互模式官方文档](https://developers.openai.com/codex/noninteractive)。已对本机 `codex exec --help` 核实参数。
+
+2026-09-07 已在 Ubuntu 本机完成真实对话并接通 Cloudflare。`bridge/codex-isolated.sh` 用 bubblewrap 隔离文件系统与进程，清空继承环境，只挂载系统运行库、专用登录目录和本次请求目录；不挂载日常开发目录。专用目录从本机现有登录初始化，不上传到网站或 Git。它仍包含运行 Codex 必需的登录凭据，不能把该目录公开。
+
+`npm run companion:cloudflare` 启动桥接与 Cloudflare Quick Tunnel，并通过 Wrangler 把隧道地址及桥接/访客口令写入 Worker secrets。重启时隧道地址会变化，脚本自动更新。Wrangler 登录配置保存在忽略的 `tmp/cloudflare-config`，可用 `XDG_CONFIG_HOME="$PWD/tmp/cloudflare-config" npx wrangler login` 更新登录。临时隧道没有稳定性保证；机器离线时网站仍能浏览，小齐无法回复。
+
+本机当前后台单元为 `geniusqi-companion.service`，可用 `systemctl --user status geniusqi-companion` 和 `systemctl --user restart geniusqi-companion` 查看或重启。这是临时用户单元，不会开机自动启动；重启电脑后运行 `npm run companion:cloudflare`。勿同时运行两个桥接服务。访客访问口令见本机忽略文件 `tmp/companion-access.txt`，在网页“连接设置”中填写，接口保持 `/api/chat`。
 
 ## 检查与发布
 
@@ -65,7 +71,9 @@ npm run build
 
 测试覆盖连接服务消息校验、鉴权、返回值、并发拒绝、错误处理；不替代真实 Codex 调用或浏览器视觉/交互验收。
 
-Sites 构建配置保留在 `.openai/hosting.json` 和 `vite.config.ts`，输出位于 `dist/`。正式域名 geniusqi.com 接管前需要确认原托管平台、DNS 和原页面回退方案。Windows 旧版源码尚未导入，此项目是新建实现。
+正式发布在站主 Cloudflare 账号的 `geniusqi-world` Worker，域名为 https://geniusqi.com 和 https://www.geniusqi.com。`wrangler.production.json` 保存可重复部署配置；登录 Cloudflare 后运行 `npm run deploy:cloudflare`。本机项目内登录需同时设置 `XDG_CONFIG_HOME="$PWD/tmp/cloudflare-config"`。密钥由服务端 secrets 管理，不能写进部署配置。
+
+原 `geniusqi-static` Pages 项目及版本保留，未覆盖。主域名旧的两条 A 记录在备份到 `tmp/cloudflare-before.json` 后替换为 Worker 自定义域名，其他子站保留。Sites 构建配置仍在 `.openai/hosting.json` 和 `vite.config.ts`，原 Sites 私有预览保留；正式访问使用上述 Cloudflare 域名。Windows 旧版源码尚未导入，此项目是新建实现。
 
 ## 人物与环境素材
 
