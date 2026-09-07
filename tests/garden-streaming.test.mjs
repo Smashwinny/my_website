@@ -36,3 +36,19 @@ test('garden enters without scenery downloads, streams nearby bounded batches an
   assert.equal(released,requests.length-2,'late downloads must release GPU resources');
  }finally{environment?.dispose();GLTFLoader.prototype.loadAsync=original}
 });
+
+test('appended collision subtree preserves old floor and blocks new geometry',async()=>{
+ const {createCollisionWorld,PlayerController,safeCameraPosition}=await import('../app/scene/physics.mjs');
+ const base=new THREE.Group(),floor=new THREE.Mesh(new THREE.BoxGeometry(30,.2,30));floor.position.y=-.1;base.add(floor);
+ const world=createCollisionWorld(base),original=world.subTrees.slice();
+ const batch=new THREE.Group(),wall=new THREE.Mesh(new THREE.BoxGeometry(.2,5,8));wall.position.set(2,2.5,0);batch.add(wall);
+ const start=performance.now();world.subTrees.push(createCollisionWorld(batch));
+ console.log('Incremental box collision build:',(performance.now()-start).toFixed(2),'ms');
+ assert(original.every((tree,i)=>world.subTrees[i]===tree),'base octree must be reused');
+ const player=new PlayerController(world,new THREE.Vector3(0,0,0));
+ for(let i=0;i<180;i++)player.update(1/60,new THREE.Vector3(1,0,0));
+ assert(player.position.x<1.6,'streamed wall must stop the player');
+ assert(Math.abs(player.position.y)<.03,'old floor must still support player');
+ assert(safeCameraPosition(world,new THREE.Vector3(0,1,0),new THREE.Vector3(4,1,0)).x<2,'camera must see appended collision');
+ player.requestJump();for(let i=0;i<8;i++)player.update(1/60,new THREE.Vector3());assert(player.position.y>.2,'jump must survive collision append');
+});
