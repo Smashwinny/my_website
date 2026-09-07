@@ -1,0 +1,328 @@
+{
+  "tool_versions": {
+    "Pillow": "12.3.0",
+    "numpy": "2.3.5"
+  },
+  "settings": {
+    "max_edge": 1024,
+    "jpeg_quality": 88,
+    "jpeg_chroma_subsampling": "4:4:4",
+    "alpha_cutoff": 0.45,
+    "notes": "GPU RGBA8 sizes are estimates before mipmaps; not measured load timings."
+  },
+  "totals": {
+    "source_bytes": 26469873,
+    "output_bytes": 4562390,
+    "decoded_rgba8_bytes_before": 122444480,
+    "decoded_rgba8_bytes_after": 46947008,
+    "transfer_reduction_percent": 82.76383872336675,
+    "decoded_texel_reduction_percent": 61.65853454561609,
+    "unmodified_geometry_bytes": 2051880
+  },
+  "textures": [
+    {
+      "source": "Bark_NormalTree.png",
+      "output": "Bark_NormalTree.jpg",
+      "role": "baseColor-sRGB",
+      "source_size": [
+        2048,
+        2048
+      ],
+      "output_size": [
+        1024,
+        1024
+      ],
+      "source_bytes": 3894788,
+      "output_bytes": 127846,
+      "source_sha256": "f36e94fdd73255347325b998e02a0b2575fdf714b0315bfe5e8ff34bc8e13603",
+      "output_sha256": "b555fa2c1154afefa3b42b289915813507f1145f4405dfad40306358fed79aca",
+      "has_transparency": false,
+      "decoded_rgba8_bytes_before": 16777216,
+      "decoded_rgba8_bytes_after": 4194304
+    },
+    {
+      "source": "Bark_NormalTree_Normal.png",
+      "output": "Bark_NormalTree_Normal.png",
+      "role": "normal-linear",
+      "source_size": [
+        2048,
+        2048
+      ],
+      "output_size": [
+        1024,
+        1024
+      ],
+      "source_bytes": 4384496,
+      "output_bytes": 989933,
+      "source_sha256": "852f6155404b8c39e100e41e26970e02a6a5c81b482d3726618dab28e3ad03a2",
+      "output_sha256": "8efe7e517261f02451880135ac95474778c6cb3a850d947f5ed90c7f2c620a68",
+      "has_transparency": false,
+      "decoded_rgba8_bytes_before": 16777216,
+      "decoded_rgba8_bytes_after": 4194304,
+      "normal_length_max_error": 0.005719900131225586
+    },
+    {
+      "source": "Bark_TwistedTree.png",
+      "output": "Bark_TwistedTree.jpg",
+      "role": "baseColor-sRGB",
+      "source_size": [
+        2048,
+        2048
+      ],
+      "output_size": [
+        1024,
+        1024
+      ],
+      "source_bytes": 4630805,
+      "output_bytes": 156073,
+      "source_sha256": "01608a96c42954eb725b32824530b51e67a2f3d85432d21a8d8adff958d2084a",
+      "output_sha256": "b0eb56b1c15a9175dba2082e0e0af459a423ef408a64a7c545950be145d68376",
+      "has_transparency": false,
+      "decoded_rgba8_bytes_before": 16777216,
+      "decoded_rgba8_bytes_after": 4194304
+    },
+    {
+      "source": "Bark_TwistedTree_Normal.png",
+      "output": "Bark_TwistedTree_Normal.png",
+      "role": "normal-linear",
+      "source_size": [
+        2048,
+        2048
+      ],
+      "output_size": [
+        1024,
+        1024
+      ],
+      "source_bytes": 5728199,
+      "output_bytes": 1266502,
+      "source_sha256": "692da2f58909263f074cb17b36defd09f56bf89ab7efda567a9a3e59261747b3",
+      "output_sha256": "29f64750b8db59e5f3d34b1be602ef0478e077d331c80c46fb26e35963eddcc1",
+      "has_transparency": false,
+      "decoded_rgba8_bytes_before": 16777216,
+      "decoded_rgba8_bytes_after": 4194304,
+      "normal_length_max_error": 0.005903363227844238
+    },
+    {
+      "source": "Flowers.png",
+      "output": "Flowers.png",
+      "role": "baseColor-sRGB",
+      "source_size": [
+        1008,
+        981
+      ],
+      "output_size": [
+        1008,
+        981
+      ],
+      "source_bytes": 444609,
+      "output_bytes": 422157,
+      "source_sha256": "5c531f2329c241c625aafd6cb769de29f33b480ef2a16491c2489f3c68e62a6a",
+      "output_sha256": "36b869af1609713b00b5133b9b00321778ae3fade82cc0b689247d27f31cd7ab",
+      "has_transparency": true,
+      "decoded_rgba8_bytes_before": 3955392,
+      "decoded_rgba8_bytes_after": 3955392,
+      "alpha_coverage_before": 0.497158309467178,
+      "alpha_coverage_after": 0.497158309467178,
+      "alpha_exact_when_unscaled": true
+    },
+    {
+      "source": "Grass.png",
+      "output": "Grass.jpg",
+      "role": "baseColor-sRGB",
+      "source_size": [
+        512,
+        512
+      ],
+      "output_size": [
+        512,
+        512
+      ],
+      "source_bytes": 33605,
+      "output_bytes": 6965,
+      "source_sha256": "5d69048193b246a73c996b892607fb36c75d0c60afcb2dab8aa12de3c0b2d9bd",
+      "output_sha256": "9ef8b2d5944ced203e04001df2b7227ce76520cdefbff7832f7044f10b550c7f",
+      "has_transparency": false,
+      "decoded_rgba8_bytes_before": 1048576,
+      "decoded_rgba8_bytes_after": 1048576
+    },
+    {
+      "source": "Leaves.png",
+      "output": "Leaves.png",
+      "role": "baseColor-sRGB",
+      "source_size": [
+        2048,
+        2048
+      ],
+      "output_size": [
+        1024,
+        1024
+      ],
+      "source_bytes": 2586432,
+      "output_bytes": 799595,
+      "source_sha256": "23248cebe28a24e78add32db3c2ee2f4d7b9219e9d2467279722f0197a7b6bd5",
+      "output_sha256": "5f28442baf8d013d7c24b91e5a18abc411f957dd637877a98804a44b24b14dae",
+      "has_transparency": true,
+      "decoded_rgba8_bytes_before": 16777216,
+      "decoded_rgba8_bytes_after": 4194304,
+      "alpha_coverage_before": 0.4376087188720703,
+      "alpha_coverage_after": 0.4378395080566406,
+      "alpha_exact_when_unscaled": null
+    },
+    {
+      "source": "Leaves_NormalTree_C.png",
+      "output": "Leaves_NormalTree_C.png",
+      "role": "baseColor-sRGB",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "output_size": [
+        1024,
+        1024
+      ],
+      "source_bytes": 158796,
+      "output_bytes": 149924,
+      "source_sha256": "998612bdf0b76a22f5f54d65cd7a457815d2842d89653fa4348a4ebb42933ad3",
+      "output_sha256": "399f0d7026cc34191377390433a2ebbc4b2e544c6ef7b01a9f46823ce4946579",
+      "has_transparency": true,
+      "decoded_rgba8_bytes_before": 4194304,
+      "decoded_rgba8_bytes_after": 4194304,
+      "alpha_coverage_before": 0.22873783111572266,
+      "alpha_coverage_after": 0.22873783111572266,
+      "alpha_exact_when_unscaled": true
+    },
+    {
+      "source": "Leaves_TwistedTree_C.png",
+      "output": "Leaves_TwistedTree_C.png",
+      "role": "baseColor-sRGB",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "output_size": [
+        1024,
+        1024
+      ],
+      "source_bytes": 70353,
+      "output_bytes": 67048,
+      "source_sha256": "0e459b56b14c0e81b1b7cf3d1e8c6f0bb71790eb6c46bb02a76a922d8df646ea",
+      "output_sha256": "7bd855efbe3ed33b16caae76d3010f6dc227a2f33825d5fbcf3bb04b31ae871c",
+      "has_transparency": true,
+      "decoded_rgba8_bytes_before": 4194304,
+      "decoded_rgba8_bytes_after": 4194304,
+      "alpha_coverage_before": 0.2895784378051758,
+      "alpha_coverage_after": 0.2895784378051758,
+      "alpha_exact_when_unscaled": true
+    },
+    {
+      "source": "Mushrooms.png",
+      "output": "Mushrooms.jpg",
+      "role": "baseColor-sRGB",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "output_size": [
+        1024,
+        1024
+      ],
+      "source_bytes": 1208660,
+      "output_bytes": 230438,
+      "source_sha256": "e29eed2db831e44a29634fe25c62e9e31edf201e978a52912b9e5221ffd4a1f3",
+      "output_sha256": "72d1f29e51523d2501f10e1d409fc890ba120718add2e776c8f6fefe19b27f76",
+      "has_transparency": false,
+      "decoded_rgba8_bytes_before": 4194304,
+      "decoded_rgba8_bytes_after": 4194304
+    },
+    {
+      "source": "PathRocks_Diffuse.png",
+      "output": "PathRocks_Diffuse.jpg",
+      "role": "baseColor-sRGB",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "output_size": [
+        1024,
+        1024
+      ],
+      "source_bytes": 811732,
+      "output_bytes": 167671,
+      "source_sha256": "85a04abb2c136fee53b376daf3b7d7f96fdf3966de0258dff6fe2b24da792b23",
+      "output_sha256": "e4ef914f92cf09e9df9f72fe3b3fd2d27340b3024b71b4f2d46b8b2c5331f1c8",
+      "has_transparency": false,
+      "decoded_rgba8_bytes_before": 4194304,
+      "decoded_rgba8_bytes_after": 4194304
+    },
+    {
+      "source": "Rocks_Diffuse.png",
+      "output": "Rocks_Diffuse.jpg",
+      "role": "baseColor-sRGB",
+      "source_size": [
+        2048,
+        2048
+      ],
+      "output_size": [
+        1024,
+        1024
+      ],
+      "source_bytes": 2517398,
+      "output_bytes": 178238,
+      "source_sha256": "b813696df6081f469a127092eb0ce45cc39d56f3ccc0699152bfcd3804810b48",
+      "output_sha256": "006d5d57f60fabbd0ec06d5adbf715815741935bb713fc6692c4f57ed5e620cb",
+      "has_transparency": false,
+      "decoded_rgba8_bytes_before": 16777216,
+      "decoded_rgba8_bytes_after": 4194304
+    }
+  ],
+  "unchanged_binaries": {
+    "Bush_Common_Flowers.bin": {
+      "bytes": 128928,
+      "sha256": "15f56a013afe0eecaded0eb97fd8f323305af11e1f0f7bb9b68472ec4cdc20d5"
+    },
+    "CommonTree_1.bin": {
+      "bytes": 491576,
+      "sha256": "9dd689e84e1aa2f5b08db8def591254d582783c73737af54ba0d89b3e549c3ae"
+    },
+    "CommonTree_3.bin": {
+      "bytes": 296984,
+      "sha256": "24541f46fd9553e2389aba15575f2697009226e82118ed76868284114fd12b49"
+    },
+    "Fern_1.bin": {
+      "bytes": 11448,
+      "sha256": "5e92b87a27f81a69fe15347a533df3c77d567b48298dceeef43168ccb7c22853"
+    },
+    "Flower_3_Group.bin": {
+      "bytes": 27772,
+      "sha256": "5ab387dd3d6fe181df3af4eeac4df85533e4c27e77545ae39a61e0c2aaaab248"
+    },
+    "Flower_4_Group.bin": {
+      "bytes": 62220,
+      "sha256": "3ac30b4c9eaa5078a17c061aa29e2e9618cc9eb58cb6d5d2ab0c07fa0b851ae1"
+    },
+    "Grass_Common_Short.bin": {
+      "bytes": 7052,
+      "sha256": "7a0f0f7a9ac39cfa4b303bac03a6594f43e48d873b73553fa06a79e4df1271e9"
+    },
+    "Mushroom_Common.bin": {
+      "bytes": 23040,
+      "sha256": "e4cee9f2570505a172990a2754d52ed5775a4d75857a832fffa1b573e38a4051"
+    },
+    "Rock_Medium_1.bin": {
+      "bytes": 13284,
+      "sha256": "ea79527d4c2b3bdb7a28bf589bf0c1fd96d192a4d0738636753911dd58681e99"
+    },
+    "Rock_Medium_2.bin": {
+      "bytes": 9432,
+      "sha256": "76b60bf8349f71abdb0ed462b3223d93c2dcabdfb5754bc132e18b021cc6c805"
+    },
+    "RockPath_Round_Wide.bin": {
+      "bytes": 247688,
+      "sha256": "d88fa064e1c11fadf5c6a1cf15bc3e81a54174e12cc79285de9ec5bbe1f2cb88"
+    },
+    "TwistedTree_1.bin": {
+      "bytes": 732456,
+      "sha256": "58e4c16c16e0a71051af76a37be0641ea8f7089652687f957383d3c4bd24723b"
+    }
+  }
+}

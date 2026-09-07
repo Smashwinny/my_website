@@ -1,0 +1,1912 @@
+[
+  {
+    "character": "traveler-male",
+    "pose": "walk-375",
+    "image": "traveler-male-walk-375.png",
+    "world_bounds": [
+      [
+        -0.4092305898666382,
+        -4.845299508837719e-16,
+        -0.5104859471321106
+      ],
+      [
+        0.29957208037376404,
+        2.5463645458221436,
+        0.46083560585975647
+      ]
+    ],
+    "meshes": [
+      {
+        "name": "M00_000_00_FaceBrow_00_FACE",
+        "vertices": 110,
+        "triangles": 160,
+        "texture_matched": true,
+        "alpha_mode": "BLEND"
+      },
+      {
+        "name": "M00_000_00_FaceMouth_00_FACE",
+        "vertices": 513,
+        "triangles": 496,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "M00_000_00_EyeIris_00_EYE",
+        "vertices": 134,
+        "triangles": 192,
+        "texture_matched": true,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_000_00_EyeHighlight_00_EYE",
+        "vertices": 130,
+        "triangles": 192,
+        "texture_matched": true,
+        "alpha_mode": "BLEND"
+      },
+      {
+        "name": "M00_000_00_EyeWhite_00_EYE",
+        "vertices": 130,
+        "triangles": 96,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "M00_000_00_Face_00_SKIN",
+        "vertices": 843,
+        "triangles": 1360,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "M00_000_00_Face_00_SKIN (Outline)",
+        "vertices": 843,
+        "triangles": 1360,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "M00_000_00_FaceEyelash_00_FACE",
+        "vertices": 160,
+        "triangles": 224,
+        "texture_matched": true,
+        "alpha_mode": "BLEND"
+      },
+      {
+        "name": "M00_000_00_FaceEyeline_00_FACE",
+        "vertices": 266,
+        "triangles": 384,
+        "texture_matched": true,
+        "alpha_mode": "BLEND"
+      },
+      {
+        "name": "M00_000_00_EyeExtra_01_EYE",
+        "vertices": 50,
+        "triangles": 64,
+        "texture_matched": true,
+        "alpha_mode": "BLEND"
+      },
+      {
+        "name": "M00_001_01_Body_00_SKIN",
+        "vertices": 4472,
+        "triangles": 7340,
+        "texture_matched": true,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_001_01_Body_00_SKIN (Outline)",
+        "vertices": 4472,
+        "triangles": 7340,
+        "texture_matched": false,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_006_01_Tops_01_CLOTH",
+        "vertices": 1927,
+        "triangles": 2990,
+        "texture_matched": true,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_006_01_Tops_01_CLOTH (Outline)",
+        "vertices": 1927,
+        "triangles": 2990,
+        "texture_matched": false,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_001_01_Bottoms_01_CLOTH",
+        "vertices": 1099,
+        "triangles": 1624,
+        "texture_matched": true,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_001_01_Bottoms_01_CLOTH (Outline)",
+        "vertices": 1099,
+        "triangles": 1624,
+        "texture_matched": false,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_001_01_Shoes_01_CLOTH",
+        "vertices": 536,
+        "triangles": 540,
+        "texture_matched": true,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_001_01_Shoes_01_CLOTH (Outline)",
+        "vertices": 536,
+        "triangles": 540,
+        "texture_matched": false,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "",
+        "vertices": 196,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 245,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 245,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 245,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 76,
+        "triangles": 48,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 425,
+        "triangles": 720,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 31500,
+        "triangles": 10500,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 221,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 900,
+        "triangles": 300,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 945,
+        "triangles": 1200,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 196,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 900,
+        "triangles": 300,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "F00_000_Hair_00_HAIR",
+        "vertices": 7775,
+        "triangles": 9196,
+        "texture_matched": true,
+        "alpha_mode": "MASK"
+      }
+    ]
+  },
+  {
+    "character": "traveler-male",
+    "pose": "idle",
+    "image": "traveler-male-idle.png",
+    "world_bounds": [
+      [
+        -0.4092305898666382,
+        -4.845299508837719e-16,
+        -0.5104859471321106
+      ],
+      [
+        0.29957208037376404,
+        2.5463645458221436,
+        0.46083560585975647
+      ]
+    ],
+    "meshes": [
+      {
+        "name": "M00_000_00_FaceBrow_00_FACE",
+        "vertices": 110,
+        "triangles": 160,
+        "texture_matched": true,
+        "alpha_mode": "BLEND"
+      },
+      {
+        "name": "M00_000_00_FaceMouth_00_FACE",
+        "vertices": 513,
+        "triangles": 496,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "M00_000_00_EyeIris_00_EYE",
+        "vertices": 134,
+        "triangles": 192,
+        "texture_matched": true,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_000_00_EyeHighlight_00_EYE",
+        "vertices": 130,
+        "triangles": 192,
+        "texture_matched": true,
+        "alpha_mode": "BLEND"
+      },
+      {
+        "name": "M00_000_00_EyeWhite_00_EYE",
+        "vertices": 130,
+        "triangles": 96,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "M00_000_00_Face_00_SKIN",
+        "vertices": 843,
+        "triangles": 1360,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "M00_000_00_Face_00_SKIN (Outline)",
+        "vertices": 843,
+        "triangles": 1360,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "M00_000_00_FaceEyelash_00_FACE",
+        "vertices": 160,
+        "triangles": 224,
+        "texture_matched": true,
+        "alpha_mode": "BLEND"
+      },
+      {
+        "name": "M00_000_00_FaceEyeline_00_FACE",
+        "vertices": 266,
+        "triangles": 384,
+        "texture_matched": true,
+        "alpha_mode": "BLEND"
+      },
+      {
+        "name": "M00_000_00_EyeExtra_01_EYE",
+        "vertices": 50,
+        "triangles": 64,
+        "texture_matched": true,
+        "alpha_mode": "BLEND"
+      },
+      {
+        "name": "M00_001_01_Body_00_SKIN",
+        "vertices": 4472,
+        "triangles": 7340,
+        "texture_matched": true,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_001_01_Body_00_SKIN (Outline)",
+        "vertices": 4472,
+        "triangles": 7340,
+        "texture_matched": false,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_006_01_Tops_01_CLOTH",
+        "vertices": 1927,
+        "triangles": 2990,
+        "texture_matched": true,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_006_01_Tops_01_CLOTH (Outline)",
+        "vertices": 1927,
+        "triangles": 2990,
+        "texture_matched": false,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_001_01_Bottoms_01_CLOTH",
+        "vertices": 1099,
+        "triangles": 1624,
+        "texture_matched": true,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_001_01_Bottoms_01_CLOTH (Outline)",
+        "vertices": 1099,
+        "triangles": 1624,
+        "texture_matched": false,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_001_01_Shoes_01_CLOTH",
+        "vertices": 536,
+        "triangles": 540,
+        "texture_matched": true,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "M00_001_01_Shoes_01_CLOTH (Outline)",
+        "vertices": 536,
+        "triangles": 540,
+        "texture_matched": false,
+        "alpha_mode": "MASK"
+      },
+      {
+        "name": "",
+        "vertices": 196,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 245,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 245,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 245,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 76,
+        "triangles": 48,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 425,
+        "triangles": 720,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 31500,
+        "triangles": 10500,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 221,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 900,
+        "triangles": 300,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 945,
+        "triangles": 1200,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 196,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 900,
+        "triangles": 300,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "F00_000_Hair_00_HAIR",
+        "vertices": 7775,
+        "triangles": 9196,
+        "texture_matched": true,
+        "alpha_mode": "MASK"
+      }
+    ]
+  },
+  {
+    "character": "traveler",
+    "pose": "walk-375",
+    "image": "traveler-walk-375.png",
+    "world_bounds": [
+      [
+        -0.39880669116973877,
+        -2.2761842188856463e-08,
+        -0.5101183652877808
+      ],
+      [
+        0.3349008858203888,
+        2.534144639968872,
+        0.42735791206359863
+      ]
+    ],
+    "meshes": [
+      {
+        "name": "Body_00_SKIN",
+        "vertices": 5307,
+        "triangles": 8864,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Body_00_SKIN (Outline)",
+        "vertices": 5307,
+        "triangles": 8864,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Bottoms_01_CLOTH",
+        "vertices": 470,
+        "triangles": 608,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Bottoms_01_CLOTH (Outline)",
+        "vertices": 470,
+        "triangles": 608,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Shoes_01_CLOTH",
+        "vertices": 600,
+        "triangles": 712,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Shoes_01_CLOTH (Outline)",
+        "vertices": 600,
+        "triangles": 712,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Tops_01_CLOTH",
+        "vertices": 717,
+        "triangles": 1210,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Tops_01_CLOTH (Outline)",
+        "vertices": 717,
+        "triangles": 1210,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "HairBack_00_HAIR",
+        "vertices": 883,
+        "triangles": 1420,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "HairBack_00_HAIR (Outline)",
+        "vertices": 883,
+        "triangles": 1420,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "FaceMouth_00_FACE",
+        "vertices": 1074,
+        "triangles": 1696,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "EyeIris_00_EYE",
+        "vertices": 194,
+        "triangles": 336,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Face_00_SKIN",
+        "vertices": 2286,
+        "triangles": 4232,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Face_00_SKIN (Outline)",
+        "vertices": 2286,
+        "triangles": 4232,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "EyeWhite_00_EYE",
+        "vertices": 290,
+        "triangles": 528,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "FaceEyeline_00_FACE",
+        "vertices": 116,
+        "triangles": 128,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "FaceBrow_00_FACE",
+        "vertices": 44,
+        "triangles": 40,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "EyeHighlight_00_EYE",
+        "vertices": 102,
+        "triangles": 96,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Hair_00_HAIR",
+        "vertices": 12868,
+        "triangles": 16600,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Hair_00_HAIR (Outline)",
+        "vertices": 12868,
+        "triangles": 16600,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 196,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 245,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 245,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 245,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 76,
+        "triangles": 48,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 425,
+        "triangles": 720,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 31500,
+        "triangles": 10500,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 221,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 900,
+        "triangles": 300,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 945,
+        "triangles": 1200,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 196,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 900,
+        "triangles": 300,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      }
+    ]
+  },
+  {
+    "character": "traveler",
+    "pose": "idle",
+    "image": "traveler-idle.png",
+    "world_bounds": [
+      [
+        -0.39880669116973877,
+        -2.2761842188856463e-08,
+        -0.5101183652877808
+      ],
+      [
+        0.3349008858203888,
+        2.534144639968872,
+        0.42735791206359863
+      ]
+    ],
+    "meshes": [
+      {
+        "name": "Body_00_SKIN",
+        "vertices": 5307,
+        "triangles": 8864,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Body_00_SKIN (Outline)",
+        "vertices": 5307,
+        "triangles": 8864,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Bottoms_01_CLOTH",
+        "vertices": 470,
+        "triangles": 608,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Bottoms_01_CLOTH (Outline)",
+        "vertices": 470,
+        "triangles": 608,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Shoes_01_CLOTH",
+        "vertices": 600,
+        "triangles": 712,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Shoes_01_CLOTH (Outline)",
+        "vertices": 600,
+        "triangles": 712,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Tops_01_CLOTH",
+        "vertices": 717,
+        "triangles": 1210,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Tops_01_CLOTH (Outline)",
+        "vertices": 717,
+        "triangles": 1210,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "HairBack_00_HAIR",
+        "vertices": 883,
+        "triangles": 1420,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "HairBack_00_HAIR (Outline)",
+        "vertices": 883,
+        "triangles": 1420,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "FaceMouth_00_FACE",
+        "vertices": 1074,
+        "triangles": 1696,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "EyeIris_00_EYE",
+        "vertices": 194,
+        "triangles": 336,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Face_00_SKIN",
+        "vertices": 2286,
+        "triangles": 4232,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Face_00_SKIN (Outline)",
+        "vertices": 2286,
+        "triangles": 4232,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "EyeWhite_00_EYE",
+        "vertices": 290,
+        "triangles": 528,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "FaceEyeline_00_FACE",
+        "vertices": 116,
+        "triangles": 128,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "FaceBrow_00_FACE",
+        "vertices": 44,
+        "triangles": 40,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "EyeHighlight_00_EYE",
+        "vertices": 102,
+        "triangles": 96,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Hair_00_HAIR",
+        "vertices": 12868,
+        "triangles": 16600,
+        "texture_matched": true,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "Hair_00_HAIR (Outline)",
+        "vertices": 12868,
+        "triangles": 16600,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 196,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 245,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 245,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 245,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 147,
+        "triangles": 240,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 76,
+        "triangles": 48,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 85,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 425,
+        "triangles": 720,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 31500,
+        "triangles": 10500,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 221,
+        "triangles": 384,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 900,
+        "triangles": 300,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 945,
+        "triangles": 1200,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 100,
+        "triangles": 64,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 54,
+        "triangles": 80,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 196,
+        "triangles": 128,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      },
+      {
+        "name": "",
+        "vertices": 900,
+        "triangles": 300,
+        "texture_matched": false,
+        "alpha_mode": "OPAQUE"
+      }
+    ]
+  }
+]

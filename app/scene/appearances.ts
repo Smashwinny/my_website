@@ -1,4 +1,4 @@
-export const characterModels={male:'/models/traveler-male-mobile.vrm',female:'/models/traveler-mobile.vrm'} as const;
+export const characterModels={male:'/models/traveler-male-web.vrm',female:'/models/traveler-web.vrm'} as const;
 export type CharacterGender=keyof typeof characterModels;
 export function validGender(value:unknown,fallback:CharacterGender):CharacterGender{return value==='male'||value==='female'?value:fallback}
 export const appearances=[

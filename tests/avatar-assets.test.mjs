@@ -9,11 +9,15 @@ import {VRMLoaderPlugin,VRMUtils} from '@pixiv/three-vrm';
 globalThis.self=globalThis;
 globalThis.createImageBitmap=async()=>({width:1,height:1,close(){}});
 globalThis.ProgressEvent=class{constructor(type,init){this.type=type;Object.assign(this,init)}};
-for(const name of ['traveler','traveler-male'])test(`${name}: compressed avatar preserves rig, metadata and animation`,async()=>{
- const compressed=await readFile(`public/models/${name}-mobile.vrm.bin`),bytes=gunzipSync(compressed),fallback=await readFile(`public/models/${name}-mobile.vrm`),original=await readFile(`public/models/${name}.vrm`);
+for(const name of ['traveler','traveler-male'])for(const profile of ['mobile','web','lite'])test(`${name}/${profile}: compressed avatar preserves rig, metadata and animation`,async()=>{
+ const compressed=await readFile(`public/models/${name}-${profile}.vrm.bin`),bytes=gunzipSync(compressed),fallback=await readFile(`public/models/${name}-${profile}.vrm`),original=await readFile(`public/models/${name}.vrm`);
  assert.deepEqual(bytes,fallback);assert(compressed.length<original.length*.25);
  const json=b=>JSON.parse(b.subarray(20,20+b.readUInt32LE(12)).toString());const optimized=json(bytes),source=json(original);
- assert.deepEqual(optimized.extensions,source.extensions);assert.deepEqual(optimized.accessors,source.accessors);
+ assert.deepEqual(optimized.extensions,source.extensions);assert.deepEqual(optimized.nodes,source.nodes);assert.deepEqual(optimized.skins,source.skins);
+ const triangles=d=>d.meshes.reduce((sum,m)=>sum+m.primitives.reduce((n,p)=>n+(p.indices===undefined?d.accessors[p.attributes.POSITION].count:d.accessors[p.indices].count)/3,0),0);
+ assert.equal(triangles(optimized),triangles(source));
+ const primitives=d=>d.meshes.reduce((sum,m)=>sum+m.primitives.length,0);
+ if(name==='traveler-male'&&profile!=='mobile')assert(primitives(optimized)<=14);
  const loader=new GLTFLoader();loader.register(parser=>new VRMLoaderPlugin(parser));
  const gltf=await loader.parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),'');const vrm=gltf.userData.vrm;
  assert(vrm);VRMUtils.rotateVRM0(vrm);

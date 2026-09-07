@@ -2,27 +2,28 @@
 import { useEffect, useRef, useState } from 'react';
 import projects from '../data/projects.json';
 import World from './world-view';
+import {preloadAvatar} from './scene/avatar-download.mjs';
 import {worldStyles,validWorldStyle,type WorldStyle} from './scene/world-styles';
 import {appearances,validAppearance,characterModels,validGender,type CharacterGender,type AppearanceId} from './scene/appearances';
 
 type Message = {role:'user'|'assistant';content:string};
 export default function Home(){
  const [selected,setSelected]=useState<number|null>(null),[catalog,setCatalog]=useState(false),[chat,setChat]=useState(false),[settings,setSettings]=useState(false),[visited,setVisited]=useState<number[]>([]),[messages,setMessages]=useState<Message[]>([]),[input,setInput]=useState(''),[busy,setBusy]=useState(false),[error,setError]=useState(''),[endpoint,setEndpoint]=useState('/api/chat'),[token,setToken]=useState('');
- const [entered,setEntered]=useState(false);
+ const [entered,setEntered]=useState(false),[worldRevision,setWorldRevision]=useState(0);
  const [style,setStyle]=useState<WorldStyle>('garden'),[styleMenu,setStyleMenu]=useState(false),[mistVisited,setMistVisited]=useState<string[]>([]);
  const conversationEpoch=useRef(0);
  const discovery=worldStyles.find(s=>s.id===style)!.discovery;
  const companionName=style==='elements'?'小浩':style==='mist'?'小津':'小齐';
  const catalogProjects=projects.map((project,index)=>({project,index})).filter(({project})=>!discovery||mistVisited.includes(project.name));
  useEffect(()=>{try{setStyle(validWorldStyle(localStorage.getItem('world-style')));const saved=JSON.parse(localStorage.getItem('mist-discoveries')||'[]');if(Array.isArray(saved))setMistVisited(saved.filter((v:unknown)=>typeof v==='string'&&projects.some(p=>p.name===v)))}catch{}},[]);
- function chooseStyle(next:WorldStyle){conversationEpoch.current++;setBusy(false);setEntered(true);if(next==='mist')setActor('player');setStyle(next);setStyleMenu(false);setSelected(null);setCatalog(false);setChat(false);setMessages([]);setError('');try{localStorage.setItem('world-style',next)}catch{}}
+ function chooseStyle(next:WorldStyle){if(next==='garden'||next==='mist')preloadAvatar(playerSource);conversationEpoch.current++;setBusy(false);setEntered(true);if(next==='mist')setActor('player');setStyle(next);setStyleMenu(false);setSelected(null);setCatalog(false);setChat(false);setMessages([]);setError('');try{localStorage.setItem('world-style',next)}catch{}}
  const [wardrobe,setWardrobe]=useState(false),[actor,setActor]=useState<'player'|'companion'>('player');
  const [playerAppearance,setPlayerAppearance]=useState<AppearanceId>('original'),[companionAppearance,setCompanionAppearance]=useState<AppearanceId>('moon');
  const [playerGender,setPlayerGender]=useState<CharacterGender>('male'),[companionGender,setCompanionGender]=useState<CharacterGender>('female');
  const [playerSource,setPlayerSource]=useState<string>(characterModels.male),[companionSource,setCompanionSource]=useState<string>(characterModels.female),[modelError,setModelError]=useState('');
  const importedUrls=useRef<string[]>([]);
  useEffect(()=>{try{setPlayerAppearance(validAppearance(localStorage.getItem('player-appearance'),'original'));setCompanionAppearance(validAppearance(localStorage.getItem('companion-appearance'),'moon'));const player=validGender(localStorage.getItem('player-gender'),'male'),companion=validGender(localStorage.getItem('companion-gender'),'female');setPlayerGender(player);setPlayerSource(characterModels[player]);setCompanionGender(companion);setCompanionSource(characterModels[companion])}catch{}return()=>{importedUrls.current.forEach(url=>URL.revokeObjectURL(url))}},[]);
- function chooseGender(gender:CharacterGender){if(actor==='player'){setPlayerGender(gender);setPlayerSource(characterModels[gender])}else{setCompanionGender(gender);setCompanionSource(characterModels[gender])}setModelError('');try{localStorage.setItem(`${actor}-gender`,gender)}catch{}}
+ function chooseGender(gender:CharacterGender){if((actor==='player'?playerSource:companionSource)===characterModels[gender])setWorldRevision(v=>v+1);if(actor==='player'){setPlayerGender(gender);setPlayerSource(characterModels[gender])}else{setCompanionGender(gender);setCompanionSource(characterModels[gender])}setModelError('');try{localStorage.setItem(`${actor}-gender`,gender)}catch{}}
  function chooseAppearance(id:AppearanceId){if(actor==='player')setPlayerAppearance(id);else setCompanionAppearance(id);try{localStorage.setItem(`${actor}-appearance`,id)}catch{}}
  async function importModel(file:File|undefined){
  if(!file)return;
@@ -38,7 +39,7 @@ export default function Home(){
  function open(i:number){if(discovery){setMistVisited(v=>{const next=v.includes(projects[i].name)?v:[...v,projects[i].name];try{localStorage.setItem('mist-discoveries',JSON.stringify(next))}catch{}return next})}setSelected(i);setVisited(v=>v.includes(i)?v:[...v,i]);setCatalog(false)}
  async function send(e:React.FormEvent){e.preventDefault();if(!input.trim()||busy)return;const epoch=conversationEpoch.current;const next:Message[]=[...messages,{role:'user',content:input.trim()}];setMessages(next);setInput('');setBusy(true);setError('');try{const res=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json',...(token?{Authorization:`Bearer ${token}`}:{})},body:JSON.stringify({messages:next.slice(-12),worldStyle:style,...(discovery?{discoveredProjects:mistVisited}:{})}),signal:AbortSignal.timeout(120000)});const data=await res.json() as {error?:string;reply?:unknown};if(!res.ok)throw Error(data.error||'连接失败');if(typeof data.reply!=='string')throw Error('连接服务返回格式错误');if(epoch===conversationEpoch.current)setMessages([...next,{role:'assistant',content:data.reply}])}catch(e){if(epoch===conversationEpoch.current)setError(e instanceof Error?e.message:'连接失败')}finally{if(epoch===conversationEpoch.current)setBusy(false)}}
  return <main data-world-style={style}>
- {entered&&<World style={style} onSelect={open} onChat={()=>setChat(true)} paused={selected!==null||catalog||chat||settings||wardrobe||styleMenu} chatOpen={chat} playerAppearance={playerAppearance} companionAppearance={companionAppearance} playerSource={playerSource} companionSource={companionSource}/>}
+ {entered&&<World key={worldRevision} style={style} onSelect={open} onChat={()=>setChat(true)} paused={selected!==null||catalog||chat||settings||wardrobe||styleMenu} chatOpen={chat} playerAppearance={playerAppearance} companionAppearance={companionAppearance} playerSource={playerSource} companionSource={companionSource}/>}
  <header className="topbar"><a className="brand" href="/">✦ <span>GENIUSQI<small>THE PERSONAL WORLD</small></span></a><nav><button onClick={()=>setStyleMenu(true)}>切换风格</button>{!['elements','mario'].includes(style)&&<button onClick={()=>setWardrobe(true)}>角色形象</button>}<button onClick={()=>setCatalog(true)}>{discovery?'发现手记':'作品图鉴'} {!discovery&&<span>{projects.length.toString().padStart(2,'0')}</span>}</button><a href="https://github.com/Smashwinny" target="_blank" rel="noreferrer">GitHub ↗</a><button aria-label="连接设置" onClick={()=>setSettings(true)}>⚙</button></nav></header>
  <section className="intro"><p className="eyebrow">{discovery?'BEYOND THE MIST':'A SMALL WORLD, BUILT WITH CURIOSITY'}</p>{discovery?<><h1>雾里有山，<br/>山外有路<span>。</span></h1><p>向前一跃，或循来路回望。<br/>有些岛藏着故事，有些只剩风声。</p></>:<><h1>把想法，<br/>变成一个世界<span>。</span></h1><p>欢迎来到我的创作浮岛。<br/>四处走走，遇见代码背后的作品。</p></>}<button className="text-button" onClick={()=>setCatalog(true)}>{discovery?'翻阅发现手记':'探索我的作品'} <span>↗</span></button></section>
  <div className="coordinates"><span className="live-dot"/> {discovery?'雾隐山海 · 前路未明':'创作浮岛 · EXPLORER MODE'} <small>{discovery?'只记来时路，不问终点。':`已发现 ${visited.length} / ${projects.length}`}</small></div>

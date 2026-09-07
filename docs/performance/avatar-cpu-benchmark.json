@@ -1,0 +1,49 @@
+{
+  "scope": "Node CPU gzip + actual GLTF/VRM parse and skeleton optimization; image decode stubbed at 1px. NOT browser, network, shader compilation, GPU upload, FPS or perceived-load timing.",
+  "node": "v24.19.0",
+  "runs": 5,
+  "rows": [
+    {
+      "name": "traveler-male",
+      "profile": "mobile",
+      "transferredBytes": 2486590,
+      "gzipMedianMs": 8.95490000000001,
+      "parseAndOptimizeMedianMs": 53.58159999999998
+    },
+    {
+      "name": "traveler-male",
+      "profile": "web",
+      "transferredBytes": 1993467,
+      "gzipMedianMs": 8.164999999999964,
+      "parseAndOptimizeMedianMs": 29.52920000000006
+    },
+    {
+      "name": "traveler-male",
+      "profile": "lite",
+      "transferredBytes": 1473232,
+      "gzipMedianMs": 7.073399999999992,
+      "parseAndOptimizeMedianMs": 26.348799999999983
+    },
+    {
+      "name": "traveler",
+      "profile": "mobile",
+      "transferredBytes": 1942357,
+      "gzipMedianMs": 10.49630000000002,
+      "parseAndOptimizeMedianMs": 34.61770000000001
+    },
+    {
+      "name": "traveler",
+      "profile": "web",
+      "transferredBytes": 1538791,
+      "gzipMedianMs": 7.972500000000082,
+      "parseAndOptimizeMedianMs": 27.37440000000015
+    },
+    {
+      "name": "traveler",
+      "profile": "lite",
+      "transferredBytes": 1339681,
+      "gzipMedianMs": 7.368499999999813,
+      "parseAndOptimizeMedianMs": 23.951900000000023
+    }
+  ]
+}

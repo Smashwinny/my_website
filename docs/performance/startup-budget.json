@@ -1,0 +1,36 @@
+{
+  "scope": "Static client dependency graph; excludes lazy worlds, HTML, CSS and network timing.",
+  "gzipBytes": 119674,
+  "files": [
+    {
+      "file": "_next/static/chunks/index-DStG_mn-.js",
+      "bytes": 178344,
+      "gzipBytes": 51379
+    },
+    {
+      "file": "_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+      "bytes": 694,
+      "gzipBytes": 422
+    },
+    {
+      "file": "_next/static/chunks/framework-BgSIrAUN.js",
+      "bytes": 190152,
+      "gzipBytes": 59096
+    },
+    {
+      "file": "_next/static/chunks/page-5Bs0LK8N.js",
+      "bytes": 18400,
+      "gzipBytes": 6784
+    },
+    {
+      "file": "_next/static/chunks/appearances-DzhvcO-r.js",
+      "bytes": 2609,
+      "gzipBytes": 1446
+    },
+    {
+      "file": "_next/static/chunks/projects-BHkgTbtS.js",
+      "bytes": 1411,
+      "gzipBytes": 547
+    }
+  ]
+}

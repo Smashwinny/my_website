@@ -35,6 +35,9 @@ Source: https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_face_03/
 Distributed at 512px JPEG for web performance; island geometry, shrine roofs, pine branches and travelling robes are original procedural work.
 Visual direction reference only: Black Myth: Wukong official PlayStation gallery. No game models or screenshots are shipped.
 The mobile VRMs preserve the original model and license metadata; embedded textures are reduced to 512px. .vrm.bin files are gzip-compressed versions decoded locally by the browser.
+Web/lite update: rebuilt from the same CC0 source VRMs, preserving geometry, rig, morphs and licensing. Face textures remain 1024px; hair texture resolution and body textures vary by device profile. Identical-material primitives are merged without decimation. No new likeness or original character-sculpt claim is made.
+Nature-web textures are derived from the same Quaternius CC0 assets: premultiplied-alpha color downsampling, lossless numeric normal maps, JPEG for opaque color only. Geometry unchanged.
+World-space foot planting, two-bone IK, fitted beveled lamellar armor, split robe panels and secondary mantle motion: original website implementation.
 
 Element world / 掌中万象:
 Portrait derived with image generation from the site owner's supplied sample2.jpg; sample.jpg and sample.mp4 were used as style references only.

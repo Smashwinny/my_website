@@ -1,0 +1,1618 @@
+[
+  {
+    "source_file": "traveler-male.vrm",
+    "output": "traveler-male-web.vrm",
+    "profile": "web",
+    "source_sha256": "7aeca142dabbc26ba0f5b9c998c8f3cb6df341287d67788427ac837223785a3f",
+    "web_sha256": "35b8d90490a9f284f478fa1f124270f5ea29020206f7e48819e3bf5ba3d7a02f",
+    "source": {
+      "file_bytes": 18481892,
+      "gzip_bytes": 15477083,
+      "primitives": 131,
+      "triangles": 24858,
+      "unique_vertices": 18145,
+      "nodes": 96,
+      "skins": 3,
+      "image_pixels": 25493696,
+      "image_mip_rgba_bytes_estimate": 135966379
+    },
+    "web": {
+      "file_bytes": 3939148,
+      "gzip_bytes": 1993467,
+      "primitives": 14,
+      "triangles": 24858,
+      "unique_vertices": 18145,
+      "nodes": 96,
+      "skins": 3,
+      "image_pixels": 8339648,
+      "image_mip_rgba_bytes_estimate": 44478123
+    },
+    "verified": [
+      "triangle coverage and material association",
+      "all vertex channels",
+      "all morph deltas",
+      "nodes and skins",
+      "humanoid/spring/constraint metadata",
+      "embedded licensing",
+      "4-byte aligned bounded views",
+      "gzip roundtrip"
+    ],
+    "textures": [
+      {
+        "name": "M00_000_00_FaceBrow_00",
+        "source_size": [
+          1024,
+          256
+        ],
+        "web_size": [
+          1024,
+          256
+        ],
+        "source_bytes": 29253,
+        "web_bytes": 21696,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Shader_NoneNormal",
+        "source_size": [
+          8,
+          8
+        ],
+        "web_size": [
+          8,
+          8
+        ],
+        "source_bytes": 80,
+        "web_bytes": 78,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Shader_NoneBlack",
+        "source_size": [
+          8,
+          8
+        ],
+        "web_size": [
+          8,
+          8
+        ],
+        "source_bytes": 81,
+        "web_bytes": 69,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Shader_NoneBlack",
+        "source_size": [
+          8,
+          8
+        ],
+        "web_size": [
+          8,
+          8
+        ],
+        "source_bytes": 81,
+        "web_bytes": 69,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_000_00_FaceMouth_00",
+        "source_size": [
+          512,
+          512
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 120266,
+        "web_bytes": 76566,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_000_00_EyeIris_00",
+        "source_size": [
+          1024,
+          512
+        ],
+        "web_size": [
+          1024,
+          512
+        ],
+        "source_bytes": 189801,
+        "web_bytes": 148859,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_000_00_EyeHighlight_00",
+        "source_size": [
+          1024,
+          512
+        ],
+        "web_size": [
+          1024,
+          512
+        ],
+        "source_bytes": 28314,
+        "web_bytes": 16163,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_000_00_EyeWhite_00",
+        "source_size": [
+          1024,
+          512
+        ],
+        "web_size": [
+          1024,
+          512
+        ],
+        "source_bytes": 261431,
+        "web_bytes": 25672,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 49.78
+      },
+      {
+        "name": "M00_000_00_Face_00",
+        "source_size": [
+          1024,
+          1024
+        ],
+        "web_size": [
+          1024,
+          1024
+        ],
+        "source_bytes": 608935,
+        "web_bytes": 68054,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 48.03
+      },
+      {
+        "name": "M00_000_00_Face_00_nml",
+        "source_size": [
+          1024,
+          1024
+        ],
+        "web_size": [
+          1024,
+          1024
+        ],
+        "source_bytes": 327028,
+        "web_bytes": 185807,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Matcap_Rim",
+        "source_size": [
+          512,
+          512
+        ],
+        "web_size": [
+          256,
+          256
+        ],
+        "source_bytes": 62558,
+        "web_bytes": 4934,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 47.42
+      },
+      {
+        "name": "M00_000_00_Face_00_out",
+        "source_size": [
+          256,
+          256
+        ],
+        "web_size": [
+          256,
+          256
+        ],
+        "source_bytes": 14108,
+        "web_bytes": 8971,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_000_00_FaceEyelash_00",
+        "source_size": [
+          1024,
+          256
+        ],
+        "web_size": [
+          1024,
+          256
+        ],
+        "source_bytes": 4654,
+        "web_bytes": 1096,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_000_00_FaceEyeline_00",
+        "source_size": [
+          1024,
+          256
+        ],
+        "web_size": [
+          1024,
+          256
+        ],
+        "source_bytes": 52548,
+        "web_bytes": 42714,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_000_00_EyeExtra_01",
+        "source_size": [
+          1024,
+          512
+        ],
+        "web_size": [
+          1024,
+          512
+        ],
+        "source_bytes": 98283,
+        "web_bytes": 68319,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_001_00_Body_00",
+        "source_size": [
+          2048,
+          2048
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 2713614,
+        "web_bytes": 38968,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 41.46
+      },
+      {
+        "name": "M00_001_00_Body_00_nml",
+        "source_size": [
+          2048,
+          2048
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 3831468,
+        "web_bytes": 177953,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_006_01_Tops_01",
+        "source_size": [
+          2048,
+          2048
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 2430073,
+        "web_bytes": 47398,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 41.24
+      },
+      {
+        "name": "M00_001_01_Bottoms_01",
+        "source_size": [
+          1024,
+          1024
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 734146,
+        "web_bytes": 174216,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_001_01_Shoes_01",
+        "source_size": [
+          512,
+          512
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 114662,
+        "web_bytes": 12966,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 48.74
+      },
+      {
+        "name": "F00_000_Hair_00",
+        "source_size": [
+          512,
+          1024
+        ],
+        "web_size": [
+          512,
+          1024
+        ],
+        "source_bytes": 265478,
+        "web_bytes": 26483,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 50.62
+      },
+      {
+        "name": "F00_000_Hair_00_nml",
+        "source_size": [
+          512,
+          1024
+        ],
+        "web_size": [
+          512,
+          1024
+        ],
+        "source_bytes": 107974,
+        "web_bytes": 56077,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Matcap_RimHair",
+        "source_size": [
+          512,
+          512
+        ],
+        "web_size": [
+          256,
+          256
+        ],
+        "source_bytes": 39462,
+        "web_bytes": 3547,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 49.88
+      },
+      {
+        "name": "F00_000_Hair_00_spe",
+        "source_size": [
+          512,
+          1024
+        ],
+        "web_size": [
+          512,
+          1024
+        ],
+        "source_bytes": 126661,
+        "web_bytes": 37939,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 50.04
+      },
+      {
+        "name": "Thumbnail",
+        "source_size": [
+          2048,
+          2048
+        ],
+        "web_size": [
+          128,
+          128
+        ],
+        "source_bytes": 2668797,
+        "web_bytes": 29441,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      }
+    ],
+    "previous_mobile": {
+      "file_bytes": 5439264,
+      "gzip_bytes": 2486590,
+      "primitives": 131,
+      "triangles": 24858,
+      "unique_vertices": 18145,
+      "nodes": 96,
+      "skins": 3,
+      "image_pixels": 4063424,
+      "image_mip_rgba_bytes_estimate": 21671595
+    }
+  },
+  {
+    "source_file": "traveler.vrm",
+    "output": "traveler-web.vrm",
+    "profile": "web",
+    "source_sha256": "12c2b97e95e700783a6a550dc0eee2d7880aeedccef9ae67bc4c5a2f0f2631a2",
+    "web_sha256": "036c61dd72cbecb7a57471c197bb6da485d5b2c8b5db95033a10d287086cce24",
+    "source": {
+      "file_bytes": 10776032,
+      "gzip_bytes": 7268024,
+      "primitives": 13,
+      "triangles": 36470,
+      "unique_vertices": 24951,
+      "nodes": 171,
+      "skins": 3,
+      "image_pixels": 22347776,
+      "image_mip_rgba_bytes_estimate": 119188139
+    },
+    "web": {
+      "file_bytes": 3282020,
+      "gzip_bytes": 1538791,
+      "primitives": 13,
+      "triangles": 36470,
+      "unique_vertices": 24951,
+      "nodes": 171,
+      "skins": 3,
+      "image_pixels": 7553024,
+      "image_mip_rgba_bytes_estimate": 40282795
+    },
+    "verified": [
+      "triangle coverage and material association",
+      "all vertex channels",
+      "all morph deltas",
+      "nodes and skins",
+      "humanoid/spring/constraint metadata",
+      "embedded licensing",
+      "4-byte aligned bounded views",
+      "gzip roundtrip"
+    ],
+    "textures": [
+      {
+        "name": "Body_00",
+        "source_size": [
+          2048,
+          2048
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 652855,
+        "web_bytes": 18153,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 47.54
+      },
+      {
+        "name": "Body_00_nml",
+        "source_size": [
+          2048,
+          2048
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 2958851,
+        "web_bytes": 149080,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Bottoms_01",
+        "source_size": [
+          1024,
+          1024
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 125315,
+        "web_bytes": 8333,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 54.4
+      },
+      {
+        "name": "Shoes_01",
+        "source_size": [
+          512,
+          512
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 105061,
+        "web_bytes": 30502,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 45.22
+      },
+      {
+        "name": "Tops_01",
+        "source_size": [
+          1024,
+          2048
+        ],
+        "web_size": [
+          256,
+          512
+        ],
+        "source_bytes": 190081,
+        "web_bytes": 4712,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 49.72
+      },
+      {
+        "name": "HairBack_00",
+        "source_size": [
+          1024,
+          1024
+        ],
+        "web_size": [
+          1024,
+          1024
+        ],
+        "source_bytes": 141988,
+        "web_bytes": 26728,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 54.39
+      },
+      {
+        "name": "HairBack_00_nml",
+        "source_size": [
+          512,
+          512
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 86176,
+        "web_bytes": 57120,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "FaceMouth_00",
+        "source_size": [
+          512,
+          512
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 40655,
+        "web_bytes": 11032,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 49.81
+      },
+      {
+        "name": "EyeIris_00",
+        "source_size": [
+          1024,
+          512
+        ],
+        "web_size": [
+          1024,
+          512
+        ],
+        "source_bytes": 90019,
+        "web_bytes": 24543,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 52.19
+      },
+      {
+        "name": "Face_00",
+        "source_size": [
+          1024,
+          1024
+        ],
+        "web_size": [
+          1024,
+          1024
+        ],
+        "source_bytes": 142098,
+        "web_bytes": 34245,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 51.35
+      },
+      {
+        "name": "Face_00_outline",
+        "source_size": [
+          256,
+          256
+        ],
+        "web_size": [
+          256,
+          256
+        ],
+        "source_bytes": 14650,
+        "web_bytes": 10684,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "EyeWhite_00",
+        "source_size": [
+          1024,
+          512
+        ],
+        "web_size": [
+          1024,
+          512
+        ],
+        "source_bytes": 118527,
+        "web_bytes": 20945,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 50.15
+      },
+      {
+        "name": "FaceEyeline_00",
+        "source_size": [
+          1024,
+          256
+        ],
+        "web_size": [
+          1024,
+          256
+        ],
+        "source_bytes": 23964,
+        "web_bytes": 12308,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 47.64
+      },
+      {
+        "name": "FaceBrow_00",
+        "source_size": [
+          1024,
+          256
+        ],
+        "web_size": [
+          1024,
+          256
+        ],
+        "source_bytes": 4011,
+        "web_bytes": 3358,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "EyeHighlight_00",
+        "source_size": [
+          1024,
+          512
+        ],
+        "web_size": [
+          1024,
+          512
+        ],
+        "source_bytes": 7926,
+        "web_bytes": 6428,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Hair_00",
+        "source_size": [
+          512,
+          1024
+        ],
+        "web_size": [
+          512,
+          1024
+        ],
+        "source_bytes": 131731,
+        "web_bytes": 18272,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 51.67
+      },
+      {
+        "name": "Hair_00_nml",
+        "source_size": [
+          512,
+          1024
+        ],
+        "web_size": [
+          512,
+          1024
+        ],
+        "source_bytes": 97368,
+        "web_bytes": 53744,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Hair_00_spe",
+        "source_size": [
+          512,
+          1024
+        ],
+        "web_size": [
+          512,
+          1024
+        ],
+        "source_bytes": 54645,
+        "web_bytes": 15105,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 59.65
+      },
+      {
+        "name": "Thumbnail",
+        "source_size": [
+          2048,
+          2048
+        ],
+        "web_size": [
+          128,
+          128
+        ],
+        "source_bytes": 1243889,
+        "web_bytes": 5125,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 37.56
+      }
+    ],
+    "previous_mobile": {
+      "file_bytes": 5374832,
+      "gzip_bytes": 1942357,
+      "primitives": 13,
+      "triangles": 36470,
+      "unique_vertices": 24951,
+      "nodes": 171,
+      "skins": 3,
+      "image_pixels": 3473408,
+      "image_mip_rgba_bytes_estimate": 18524843
+    }
+  },
+  {
+    "source_file": "traveler-male.vrm",
+    "output": "traveler-male-lite.vrm",
+    "profile": "lite",
+    "source_sha256": "7aeca142dabbc26ba0f5b9c998c8f3cb6df341287d67788427ac837223785a3f",
+    "web_sha256": "7fce8dfea8a196946de18fb8a6bd6173d9bf3bb1058bf83a6aadb12d091b4817",
+    "source": {
+      "file_bytes": 18481892,
+      "gzip_bytes": 15477083,
+      "primitives": 131,
+      "triangles": 24858,
+      "unique_vertices": 18145,
+      "nodes": 96,
+      "skins": 3,
+      "image_pixels": 25493696,
+      "image_mip_rgba_bytes_estimate": 135966379
+    },
+    "web": {
+      "file_bytes": 3403976,
+      "gzip_bytes": 1473232,
+      "primitives": 14,
+      "triangles": 24858,
+      "unique_vertices": 18145,
+      "nodes": 96,
+      "skins": 3,
+      "image_pixels": 3817664,
+      "image_mip_rgba_bytes_estimate": 20360875
+    },
+    "verified": [
+      "triangle coverage and material association",
+      "all vertex channels",
+      "all morph deltas",
+      "nodes and skins",
+      "humanoid/spring/constraint metadata",
+      "embedded licensing",
+      "4-byte aligned bounded views",
+      "gzip roundtrip"
+    ],
+    "textures": [
+      {
+        "name": "M00_000_00_FaceBrow_00",
+        "source_size": [
+          1024,
+          256
+        ],
+        "web_size": [
+          512,
+          128
+        ],
+        "source_bytes": 29253,
+        "web_bytes": 9173,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Shader_NoneNormal",
+        "source_size": [
+          8,
+          8
+        ],
+        "web_size": [
+          8,
+          8
+        ],
+        "source_bytes": 80,
+        "web_bytes": 78,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Shader_NoneBlack",
+        "source_size": [
+          8,
+          8
+        ],
+        "web_size": [
+          8,
+          8
+        ],
+        "source_bytes": 81,
+        "web_bytes": 69,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Shader_NoneBlack",
+        "source_size": [
+          8,
+          8
+        ],
+        "web_size": [
+          8,
+          8
+        ],
+        "source_bytes": 81,
+        "web_bytes": 69,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_000_00_FaceMouth_00",
+        "source_size": [
+          512,
+          512
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 120266,
+        "web_bytes": 76566,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_000_00_EyeIris_00",
+        "source_size": [
+          1024,
+          512
+        ],
+        "web_size": [
+          512,
+          256
+        ],
+        "source_bytes": 189801,
+        "web_bytes": 50021,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_000_00_EyeHighlight_00",
+        "source_size": [
+          1024,
+          512
+        ],
+        "web_size": [
+          512,
+          256
+        ],
+        "source_bytes": 28314,
+        "web_bytes": 9532,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_000_00_EyeWhite_00",
+        "source_size": [
+          1024,
+          512
+        ],
+        "web_size": [
+          512,
+          256
+        ],
+        "source_bytes": 261431,
+        "web_bytes": 6080,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 49.14
+      },
+      {
+        "name": "M00_000_00_Face_00",
+        "source_size": [
+          1024,
+          1024
+        ],
+        "web_size": [
+          1024,
+          1024
+        ],
+        "source_bytes": 608935,
+        "web_bytes": 68054,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 48.03
+      },
+      {
+        "name": "M00_000_00_Face_00_nml",
+        "source_size": [
+          1024,
+          1024
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 327028,
+        "web_bytes": 73150,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Matcap_Rim",
+        "source_size": [
+          512,
+          512
+        ],
+        "web_size": [
+          256,
+          256
+        ],
+        "source_bytes": 62558,
+        "web_bytes": 4934,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 47.42
+      },
+      {
+        "name": "M00_000_00_Face_00_out",
+        "source_size": [
+          256,
+          256
+        ],
+        "web_size": [
+          256,
+          256
+        ],
+        "source_bytes": 14108,
+        "web_bytes": 8971,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_000_00_FaceEyelash_00",
+        "source_size": [
+          1024,
+          256
+        ],
+        "web_size": [
+          512,
+          128
+        ],
+        "source_bytes": 4654,
+        "web_bytes": 334,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_000_00_FaceEyeline_00",
+        "source_size": [
+          1024,
+          256
+        ],
+        "web_size": [
+          512,
+          128
+        ],
+        "source_bytes": 52548,
+        "web_bytes": 17727,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_000_00_EyeExtra_01",
+        "source_size": [
+          1024,
+          512
+        ],
+        "web_size": [
+          512,
+          256
+        ],
+        "source_bytes": 98283,
+        "web_bytes": 22385,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_001_00_Body_00",
+        "source_size": [
+          2048,
+          2048
+        ],
+        "web_size": [
+          256,
+          256
+        ],
+        "source_bytes": 2713614,
+        "web_bytes": 15014,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 38.94
+      },
+      {
+        "name": "M00_001_00_Body_00_nml",
+        "source_size": [
+          2048,
+          2048
+        ],
+        "web_size": [
+          256,
+          256
+        ],
+        "source_bytes": 3831468,
+        "web_bytes": 59760,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_006_01_Tops_01",
+        "source_size": [
+          2048,
+          2048
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 2430073,
+        "web_bytes": 47398,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 41.24
+      },
+      {
+        "name": "M00_001_01_Bottoms_01",
+        "source_size": [
+          1024,
+          1024
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 734146,
+        "web_bytes": 174216,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "M00_001_01_Shoes_01",
+        "source_size": [
+          512,
+          512
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 114662,
+        "web_bytes": 12966,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 48.74
+      },
+      {
+        "name": "F00_000_Hair_00",
+        "source_size": [
+          512,
+          1024
+        ],
+        "web_size": [
+          256,
+          512
+        ],
+        "source_bytes": 265478,
+        "web_bytes": 6717,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 49.33
+      },
+      {
+        "name": "F00_000_Hair_00_nml",
+        "source_size": [
+          512,
+          1024
+        ],
+        "web_size": [
+          256,
+          512
+        ],
+        "source_bytes": 107974,
+        "web_bytes": 32528,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Matcap_RimHair",
+        "source_size": [
+          512,
+          512
+        ],
+        "web_size": [
+          256,
+          256
+        ],
+        "source_bytes": 39462,
+        "web_bytes": 3547,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 49.88
+      },
+      {
+        "name": "F00_000_Hair_00_spe",
+        "source_size": [
+          512,
+          1024
+        ],
+        "web_size": [
+          256,
+          512
+        ],
+        "source_bytes": 126661,
+        "web_bytes": 10223,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 48.7
+      },
+      {
+        "name": "Thumbnail",
+        "source_size": [
+          2048,
+          2048
+        ],
+        "web_size": [
+          128,
+          128
+        ],
+        "source_bytes": 2668797,
+        "web_bytes": 29441,
+        "format": "image/png",
+        "alpha_preserved": true,
+        "codec_psnr_db": null
+      }
+    ],
+    "previous_mobile": {
+      "file_bytes": 5439264,
+      "gzip_bytes": 2486590,
+      "primitives": 131,
+      "triangles": 24858,
+      "unique_vertices": 18145,
+      "nodes": 96,
+      "skins": 3,
+      "image_pixels": 4063424,
+      "image_mip_rgba_bytes_estimate": 21671595
+    }
+  },
+  {
+    "source_file": "traveler.vrm",
+    "output": "traveler-lite.vrm",
+    "profile": "lite",
+    "source_sha256": "12c2b97e95e700783a6a550dc0eee2d7880aeedccef9ae67bc4c5a2f0f2631a2",
+    "web_sha256": "103b6eec534dc1880ea0805b9907872941164b5b0f68bab2e1e3d910ac0b4521",
+    "source": {
+      "file_bytes": 10776032,
+      "gzip_bytes": 7268024,
+      "primitives": 13,
+      "triangles": 36470,
+      "unique_vertices": 24951,
+      "nodes": 171,
+      "skins": 3,
+      "image_pixels": 22347776,
+      "image_mip_rgba_bytes_estimate": 119188139
+    },
+    "web": {
+      "file_bytes": 3054912,
+      "gzip_bytes": 1339681,
+      "primitives": 13,
+      "triangles": 36470,
+      "unique_vertices": 24951,
+      "nodes": 171,
+      "skins": 3,
+      "image_pixels": 3620864,
+      "image_mip_rgba_bytes_estimate": 19311275
+    },
+    "verified": [
+      "triangle coverage and material association",
+      "all vertex channels",
+      "all morph deltas",
+      "nodes and skins",
+      "humanoid/spring/constraint metadata",
+      "embedded licensing",
+      "4-byte aligned bounded views",
+      "gzip roundtrip"
+    ],
+    "textures": [
+      {
+        "name": "Body_00",
+        "source_size": [
+          2048,
+          2048
+        ],
+        "web_size": [
+          256,
+          256
+        ],
+        "source_bytes": 652855,
+        "web_bytes": 7232,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 44.96
+      },
+      {
+        "name": "Body_00_nml",
+        "source_size": [
+          2048,
+          2048
+        ],
+        "web_size": [
+          256,
+          256
+        ],
+        "source_bytes": 2958851,
+        "web_bytes": 50334,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Bottoms_01",
+        "source_size": [
+          1024,
+          1024
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 125315,
+        "web_bytes": 8333,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 54.4
+      },
+      {
+        "name": "Shoes_01",
+        "source_size": [
+          512,
+          512
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 105061,
+        "web_bytes": 30502,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 45.22
+      },
+      {
+        "name": "Tops_01",
+        "source_size": [
+          1024,
+          2048
+        ],
+        "web_size": [
+          256,
+          512
+        ],
+        "source_bytes": 190081,
+        "web_bytes": 4712,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 49.72
+      },
+      {
+        "name": "HairBack_00",
+        "source_size": [
+          1024,
+          1024
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 141988,
+        "web_bytes": 7124,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 52.88
+      },
+      {
+        "name": "HairBack_00_nml",
+        "source_size": [
+          512,
+          512
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 86176,
+        "web_bytes": 57120,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "FaceMouth_00",
+        "source_size": [
+          512,
+          512
+        ],
+        "web_size": [
+          512,
+          512
+        ],
+        "source_bytes": 40655,
+        "web_bytes": 8743,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 48.79
+      },
+      {
+        "name": "EyeIris_00",
+        "source_size": [
+          1024,
+          512
+        ],
+        "web_size": [
+          512,
+          256
+        ],
+        "source_bytes": 90019,
+        "web_bytes": 7558,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 48.21
+      },
+      {
+        "name": "Face_00",
+        "source_size": [
+          1024,
+          1024
+        ],
+        "web_size": [
+          1024,
+          1024
+        ],
+        "source_bytes": 142098,
+        "web_bytes": 34245,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 51.35
+      },
+      {
+        "name": "Face_00_outline",
+        "source_size": [
+          256,
+          256
+        ],
+        "web_size": [
+          256,
+          256
+        ],
+        "source_bytes": 14650,
+        "web_bytes": 10684,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "EyeWhite_00",
+        "source_size": [
+          1024,
+          512
+        ],
+        "web_size": [
+          512,
+          256
+        ],
+        "source_bytes": 118527,
+        "web_bytes": 5598,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 49.67
+      },
+      {
+        "name": "FaceEyeline_00",
+        "source_size": [
+          1024,
+          256
+        ],
+        "web_size": [
+          512,
+          128
+        ],
+        "source_bytes": 23964,
+        "web_bytes": 4119,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 45.37
+      },
+      {
+        "name": "FaceBrow_00",
+        "source_size": [
+          1024,
+          256
+        ],
+        "web_size": [
+          512,
+          128
+        ],
+        "source_bytes": 4011,
+        "web_bytes": 1054,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "EyeHighlight_00",
+        "source_size": [
+          1024,
+          512
+        ],
+        "web_size": [
+          512,
+          256
+        ],
+        "source_bytes": 7926,
+        "web_bytes": 1820,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Hair_00",
+        "source_size": [
+          512,
+          1024
+        ],
+        "web_size": [
+          256,
+          512
+        ],
+        "source_bytes": 131731,
+        "web_bytes": 4373,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 50.54
+      },
+      {
+        "name": "Hair_00_nml",
+        "source_size": [
+          512,
+          1024
+        ],
+        "web_size": [
+          256,
+          512
+        ],
+        "source_bytes": 97368,
+        "web_bytes": 29939,
+        "format": "image/png",
+        "alpha_preserved": false,
+        "codec_psnr_db": null
+      },
+      {
+        "name": "Hair_00_spe",
+        "source_size": [
+          512,
+          1024
+        ],
+        "web_size": [
+          256,
+          512
+        ],
+        "source_bytes": 54645,
+        "web_bytes": 4697,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 55.78
+      },
+      {
+        "name": "Thumbnail",
+        "source_size": [
+          2048,
+          2048
+        ],
+        "web_size": [
+          128,
+          128
+        ],
+        "source_bytes": 1243889,
+        "web_bytes": 5125,
+        "format": "image/jpeg",
+        "alpha_preserved": false,
+        "codec_psnr_db": 37.56
+      }
+    ],
+    "previous_mobile": {
+      "file_bytes": 5374832,
+      "gzip_bytes": 1942357,
+      "primitives": 13,
+      "triangles": 36470,
+      "unique_vertices": 24951,
+      "nodes": 171,
+      "skins": 3,
+      "image_pixels": 3473408,
+      "image_mip_rgba_bytes_estimate": 18524843
+    }
+  }
+]
