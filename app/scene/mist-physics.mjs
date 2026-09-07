@@ -28,7 +28,7 @@ export class MistController{
    if(this.position.y<top-.05&&this.position.y+2.05>top-1.5){const dx=this.position.x-islandX(index),dz=this.position.z+index*ISLAND_SPACING,r=Math.hypot(dx,dz),edge=ISLAND_RADIUS+.28;if(r>0&&r<edge){this.position.x=islandX(index)+dx/r*edge;this.position.z=-index*ISLAND_SPACING+dz/r*edge;const inward=(this.velocity.x*dx+this.velocity.z*dz)/r;if(inward<0){this.velocity.x-=dx/r*inward;this.velocity.z-=dz/r*inward}}}
   }
   // Stone lanterns and the investigation tablet have solid collision bodies.
-  for(const [x,z,radius,height] of [[-2.6,.6,.28,1.4],[2.6,.6,.28,1.4],[1.3,-.65,.34,.93]]){
+  for(const [x,z,radius,height] of [[-2.6,.6,.38,2.3],[2.6,.6,.38,2.3],[1.3,-.65,.34,.93]]){
    const top=islandHeight(closest,this.time);if(this.position.y>=top+height||this.position.y+2.05<=top)continue;
    const dx=this.position.x-islandX(closest)-x,dz=this.position.z+closest*ISLAND_SPACING-z,r=Math.hypot(dx,dz),edge=radius+.28;
    if(r>0&&r<edge){this.position.x+=dx/r*(edge-r);this.position.z+=dz/r*(edge-r);const inward=(this.velocity.x*dx+this.velocity.z*dz)/r;if(inward<0){this.velocity.x-=dx/r*inward;this.velocity.z-=dz/r*inward}}

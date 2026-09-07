@@ -27,3 +27,11 @@ Distribution mirror: https://github.com/agentkaerf/FreeModels
 
 Procedural terrain, stone pavilion, exhibition objects, scene assembly,
 lighting and character motion: this website's source implementation.
+
+Mist world update:
+Rock Face 03 photographic diffuse + OpenGL normal maps, Dario Barresi / Rico Cilliers, Poly Haven, CC0.
+https://polyhaven.com/a/rock_face_03
+Source: https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_face_03/
+Distributed at 512px JPEG for web performance; island geometry, shrine roofs, pine branches and travelling robes are original procedural work.
+Visual direction reference only: Black Myth: Wukong official PlayStation gallery. No game models or screenshots are shipped.
+The mobile VRMs preserve the original model and license metadata; embedded textures are reduced to 512px. .vrm.bin files are gzip-compressed versions decoded locally by the browser.

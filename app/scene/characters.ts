@@ -4,9 +4,19 @@ import {VRM,VRMLoaderPlugin,VRMHumanBoneName,VRMUtils} from '@pixiv/three-vrm';
 import {appearances,type AppearanceId} from './appearances';
 export type Motion={speed:number;grounded:boolean;verticalVelocity:number;landing:number;turn:number;engaged:boolean};
 export type Character={root:THREE.Group;vrm:VRM;setAppearance:(id:AppearanceId)=>void;update:(delta:number,time:number,motion:Motion)=>void};
-export async function loadCharacter(companion=false,source='/models/traveler.vrm'):Promise<Character>{
+// Cache bytes, not live VRMs: each scene owns and disposes its GPU resources.
+const avatarBytes=new Map<string,Promise<ArrayBuffer>>();
+async function readAvatar(source:string){
+ if(!avatarBytes.has(source)){
+  const request=(async()=>{const compressed=source.endsWith('-mobile.vrm')&&typeof DecompressionStream!=='undefined';const response=await fetch(compressed?source+'.bin':source);if(!response.ok)throw Error('人物下载失败');if(compressed){if(!response.body)throw Error('人物数据为空');return new Response(response.body.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer()}return response.arrayBuffer()})();
+  avatarBytes.set(source,request);request.catch(()=>avatarBytes.delete(source));
+ }
+ return avatarBytes.get(source)!;
+}
+export async function loadCharacter(companion=false,source='/models/traveler.vrm',mist=false):Promise<Character>{
  const loader=new GLTFLoader();loader.register(parser=>new VRMLoaderPlugin(parser));
- const gltf=await loader.loadAsync(source),vrm=gltf.userData.vrm as VRM|undefined;
+ const bytes=source.startsWith('blob:')?await(await fetch(source)).arrayBuffer():await readAvatar(source);
+ const gltf=await loader.parseAsync(bytes,''),vrm=gltf.userData.vrm as VRM|undefined;
  if(!vrm?.humanoid)throw Error('请选择带有标准人形骨骼的 VRM 模型');
  VRMUtils.removeUnnecessaryVertices(vrm.scene);VRMUtils.combineSkeletons(vrm.scene);
  VRMUtils.rotateVRM0(vrm);
@@ -15,6 +25,7 @@ export async function loadCharacter(companion=false,source='/models/traveler.vrm
  const bounds=new THREE.Box3().setFromObject(vrm.scene),height=bounds.max.y-bounds.min.y;
  if(!Number.isFinite(height)||height<.1)throw Error('模型尺寸无效');
  root.scale.setScalar((companion?1.06:2.05)/height);const baseY=-bounds.min.y;vrm.scene.position.y=baseY;
+ if(mist){vrm.scene.traverse(o=>{if(o instanceof THREE.Mesh){const convert=(material:THREE.Material)=>{const old=material as THREE.MeshStandardMaterial;const m=new THREE.MeshStandardMaterial({name:old.name,map:old.map,color:old.color?.clone()??new THREE.Color('white'),normalMap:old.normalMap,roughness:.92,side:old.side,alphaTest:old.alphaTest,transparent:old.transparent,opacity:old.opacity});if(/HAIR/i.test(m.name)){m.map=null;m.color.set('#27241f')}if(/Tops|Bottoms|Shoes|cloth/i.test(m.name)){m.map=null;m.color.set('#4f493c')}old.dispose();return m};o.material=Array.isArray(o.material)?o.material.map(convert):convert(o.material)}})}
  type Toon=THREE.MeshStandardMaterial & {shadeColorFactor?:THREE.Color};
  const originals:{material:Toon;map:THREE.Texture|null;color:THREE.Color;shade?:THREE.Color}[]=[];
  vrm.scene.traverse(object=>{if(object instanceof THREE.Mesh){object.castShadow=true;object.receiveShadow=true;object.frustumCulled=false;for(const mat of Array.isArray(object.material)?object.material:[object.material]){const m=mat as Toon;if(m.color&&!originals.some(v=>v.material===m))originals.push({material:m,map:m.map,color:m.color.clone(),shade:m.shadeColorFactor?.clone()})}}});
@@ -28,8 +39,8 @@ export async function loadCharacter(companion=false,source='/models/traveler.vrm
  const wingGeo=new THREE.ShapeGeometry(wingShape,24),wingMat=new THREE.MeshPhysicalMaterial({color:'#d1e8ed',metalness:.15,roughness:.2,transparent:true,opacity:.65,side:THREE.DoubleSide,depthWrite:false});
  for(const [group,sign] of [[wingLeft,1],[wingRight,-1]] as const){const wing=new THREE.Mesh(wingGeo,wingMat);wing.scale.x=sign;group.add(wing);group.position.set(sign*.08,.08,-.13)}
  function setAppearance(id:AppearanceId){const preset=appearances.find(p=>p.id===id)||appearances[0];for(const original of originals){const m=original.material;m.map=original.map;m.color.copy(original.color);if(original.shade)m.shadeColorFactor?.copy(original.shade);
- const hair=/HAIR|hair/i.test(m.name),clothes=/Tops|Bottoms|Shoes|cloth/i.test(m.name);const color=hair?preset.hair:clothes?preset.cloth:null;if(color){m.map=null;m.color.set(color);m.shadeColorFactor?.set(color).multiplyScalar(.68)}m.needsUpdate=true}
- halo.visible=companion||preset.accessory==='wings';hat.visible=preset.accessory==='beret';decor.visible=companion||preset.accessory==='wings';wingMat.color.set(preset.accent);hatMat.color.set(preset.cloth||'#527569');haloMat.color.set(preset.accent)}
+ const hair=/HAIR|hair/i.test(m.name),clothes=/Tops|Bottoms|Shoes|cloth/i.test(m.name);const color=hair?preset.hair:clothes?preset.cloth:null;if(color){const shade=mist?(hair?'#292722':id==='rose'?'#63483e':id==='moon'?'#747366':'#474f40'):color;m.map=null;m.color.set(shade);m.shadeColorFactor?.set(color).multiplyScalar(.68)}m.needsUpdate=true}
+ halo.visible=!mist&&(companion||preset.accessory==='wings');hat.visible=!mist&&preset.accessory==='beret';decor.visible=!mist&&(companion||preset.accessory==='wings');wingMat.color.set(preset.accent);hatMat.color.set(preset.cloth||'#527569');haloMat.color.set(preset.accent)}
  setAppearance(companion?'moon':'original');
  const target=new THREE.Quaternion(),euler=new THREE.Euler();let blend=1;
  function pose(name:VRMHumanBoneName,x=0,y=0,z=0){const node=vrm!.humanoid.getNormalizedBoneNode(name);if(node){target.setFromEuler(euler.set(x,y,z));node.quaternion.slerp(target,blend)}}
@@ -61,7 +72,7 @@ export async function loadCharacter(companion=false,source='/models/traveler.vrm
   pose('leftHand',0,0,-.08);pose('rightHand',0,0,.08);pose('head',breath*.013,-turn*.2+Math.sin(time*.45)*.035,step*speed*.01);
   vrm.scene.position.y=baseY+Math.max(0,Math.abs(Math.sin(phase*2))*speed*.018);
  }
- const blinkPhase=time%4.7;vrm.expressionManager?.setValue('blink',blinkPhase<.18?Math.sin(blinkPhase/.18*Math.PI):0);vrm.expressionManager?.setValue('happy',companion?(motion.engaged?.4:.18):.06);vrm.expressionManager?.setValue('aa',0);
+ const blinkPhase=time%4.7;vrm.expressionManager?.setValue('blink',blinkPhase<.18?Math.sin(blinkPhase/.18*Math.PI):0);vrm.expressionManager?.setValue('happy',mist?0:companion?(motion.engaged?.4:.18):.06);vrm.expressionManager?.setValue('aa',0);
  vrm.update(delta);
  }};
 }
