@@ -1,21 +1,14 @@
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {VRM,VRMLoaderPlugin,VRMHumanBoneName,VRMUtils} from '@pixiv/three-vrm';
+import {downloadAvatar} from './avatar-download.mjs';
 import {appearances,type AppearanceId} from './appearances';
 export type Motion={speed:number;grounded:boolean;verticalVelocity:number;landing:number;turn:number;engaged:boolean};
 export type Character={root:THREE.Group;vrm:VRM;setAppearance:(id:AppearanceId)=>void;update:(delta:number,time:number,motion:Motion)=>void};
-// Cache bytes, not live VRMs: each scene owns and disposes its GPU resources.
-const avatarBytes=new Map<string,Promise<ArrayBuffer>>();
-async function readAvatar(source:string){
- if(!avatarBytes.has(source)){
-  const request=(async()=>{const compressed=source.endsWith('-mobile.vrm')&&typeof DecompressionStream!=='undefined';const response=await fetch(compressed?source+'.bin':source);if(!response.ok)throw Error('人物下载失败');if(compressed){if(!response.body)throw Error('人物数据为空');return new Response(response.body.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer()}return response.arrayBuffer()})();
-  avatarBytes.set(source,request);request.catch(()=>avatarBytes.delete(source));
- }
- return avatarBytes.get(source)!;
-}
-export async function loadCharacter(companion=false,source='/models/traveler.vrm',mist=false):Promise<Character>{
+export type CharacterProgress={loaded:number;total:number;phase:'download'|'decode'|'ready'|'setup'};
+export async function loadCharacter(companion=false,source='/models/traveler.vrm',mist=false,onProgress:(progress:CharacterProgress)=>void=()=>{}):Promise<Character>{
  const loader=new GLTFLoader();loader.register(parser=>new VRMLoaderPlugin(parser));
- const bytes=source.startsWith('blob:')?await(await fetch(source)).arrayBuffer():await readAvatar(source);
+ const bytes=await downloadAvatar(source,onProgress);onProgress({loaded:bytes.byteLength,total:bytes.byteLength,phase:'setup'});
  const gltf=await loader.parseAsync(bytes,''),vrm=gltf.userData.vrm as VRM|undefined;
  if(!vrm?.humanoid)throw Error('请选择带有标准人形骨骼的 VRM 模型');
  VRMUtils.removeUnnecessaryVertices(vrm.scene);VRMUtils.combineSkeletons(vrm.scene);
@@ -42,10 +35,12 @@ export async function loadCharacter(companion=false,source='/models/traveler.vrm
  const hair=/HAIR|hair/i.test(m.name),clothes=/Tops|Bottoms|Shoes|cloth/i.test(m.name);const color=hair?preset.hair:clothes?preset.cloth:null;if(color){const shade=mist?(hair?'#292722':id==='rose'?'#63483e':id==='moon'?'#747366':'#474f40'):color;m.map=null;m.color.set(shade);m.shadeColorFactor?.set(color).multiplyScalar(.68)}m.needsUpdate=true}
  halo.visible=!mist&&(companion||preset.accessory==='wings');hat.visible=!mist&&preset.accessory==='beret';decor.visible=!mist&&(companion||preset.accessory==='wings');wingMat.color.set(preset.accent);hatMat.color.set(preset.cloth||'#527569');haloMat.color.set(preset.accent)}
  setAppearance(companion?'moon':'original');
+ // VRM 0 normalized bones retain the opposite X/Z basis even after rotateVRM0.
+ const poseBasis=vrm.meta.metaVersion==='0'?-1:1;
  const target=new THREE.Quaternion(),euler=new THREE.Euler();let blend=1;
- function pose(name:VRMHumanBoneName,x=0,y=0,z=0){const node=vrm!.humanoid.getNormalizedBoneNode(name);if(node){target.setFromEuler(euler.set(x,y,z));node.quaternion.slerp(target,blend)}}
+ function pose(name:VRMHumanBoneName,x=0,y=0,z=0){const node=vrm!.humanoid.getNormalizedBoneNode(name);if(node){target.setFromEuler(euler.set(x*poseBasis,y,z*poseBasis));node.quaternion.slerp(target,blend)}}
  let speed=0,phase=0,air=0,land=0,turn=0;
- return {root,vrm,setAppearance,update(delta,time,motion){
+ const character:Character={root,vrm,setAppearance,update(delta,time,motion){
  time+=companion?1.37:0;
  speed=THREE.MathUtils.damp(speed,motion.speed,6,delta);air=THREE.MathUtils.damp(air,motion.grounded?0:1,10,delta);land=THREE.MathUtils.damp(land,motion.landing,18,delta);turn=THREE.MathUtils.damp(turn,motion.turn,5,delta);blend=1-Math.exp(-12*delta);
  phase+=delta*(2+speed*7)*speed;const step=Math.sin(phase),opposite=Math.sin(phase+Math.PI),breath=Math.sin(time*2.1),hover=Math.sin(time*2.4);
@@ -67,12 +62,14 @@ export async function loadCharacter(companion=false,source='/models/traveler.vrm
   pose('leftUpperLeg',step*stride-jumpBend-compression);pose('rightUpperLeg',opposite*stride-jumpBend*.6-compression);
   pose('leftLowerLeg',Math.max(0,step)*speed*.65+air*.72+compression*2);pose('rightLowerLeg',Math.max(0,opposite)*speed*.65+air*.48+compression*2);
   pose('leftFoot',-Math.max(0,step)*speed*.23-air*.12-compression);pose('rightFoot',-Math.max(0,opposite)*speed*.23-air*.1-compression);
-  pose('leftUpperArm',0,-step*speed*.28,-1.34+air*.3+breath*.012);pose('rightUpperArm',0,-step*speed*.28,1.34-air*.3-breath*.012);
-  pose('leftLowerArm',0,.08,-.14-Math.max(0,-step)*speed*.3-air*.3);pose('rightLowerArm',0,-.08,.14+Math.max(0,step)*speed*.3+air*.25);
-  pose('leftHand',0,0,-.08);pose('rightHand',0,0,.08);pose('head',breath*.013,-turn*.2+Math.sin(time*.45)*.035,step*speed*.01);
+  pose('leftUpperArm',-step*speed*.3*(1-air)-air*.18,0,-1.46+air*.16+breath*.008);pose('rightUpperArm',mist?-.12-air*.15:step*speed*.3*(1-air)-air*.18,0,mist?1.32:1.46-air*.16-breath*.008);
+  pose('leftLowerArm',0,-.18-speed*.16-air*.2,0);pose('rightLowerArm',0,mist?.55+air*.1:.18+speed*.16+air*.2,0);
+  pose('leftHand',0,0,0);pose('rightHand',0,0,0);if(mist){for(const finger of ['Index','Middle','Ring','Little'] as const){pose(`right${finger}Proximal`,0,0,.9);pose(`right${finger}Intermediate`,0,0,1.05);pose(`right${finger}Distal`,0,0,.65)}pose('rightThumbMetacarpal',.35,-.25,.35);pose('rightThumbProximal',0,.4,.55);pose('rightThumbDistal',0,0,.65)}pose('head',breath*.013,-turn*.2+Math.sin(time*.45)*.035,step*speed*.01);
   vrm.scene.position.y=baseY+Math.max(0,Math.abs(Math.sin(phase*2))*speed*.018);
  }
  const blinkPhase=time%4.7;vrm.expressionManager?.setValue('blink',blinkPhase<.18?Math.sin(blinkPhase/.18*Math.PI):0);vrm.expressionManager?.setValue('happy',mist?0:companion?(motion.engaged?.4:.18):.06);vrm.expressionManager?.setValue('aa',0);
  vrm.update(delta);
  }};
+ for(let frame=0;frame<30;frame++)character.update(1/60,0,{speed:0,grounded:!companion,verticalVelocity:0,landing:0,turn:0,engaged:false});
+ return character;
 }

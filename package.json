@@ -15,7 +15,8 @@
     "deploy:cloudflare": "npm run build && wrangler deploy --config wrangler.production.json",
     "sync:projects": "node scripts/sync-projects.mjs",
     "test": "node --test tests/*.test.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:motion": "node scripts/check-character-motion.mjs"
   },
   "dependencies": {
     "@pixiv/three-vrm": "^3.5.5",
