@@ -1,0 +1,23 @@
+GENIUSQI · 3D asset credits
+
+Character model:
+VRM1_Constraint_Twist_Sample v1.0.1
+(c) 2022 pixiv Inc.
+Source: https://github.com/pixiv/three-vrm/tree/dev/packages/three-vrm/examples/models
+License: https://vrm.dev/licenses/1.0/
+The original VRM's embedded metadata permits everyone to use the avatar,
+commercial use, redistribution, and modification with redistribution.
+Antisocial or hate usage is not permitted. The original VRM metadata is retained.
+The small companion uses runtime recoloring, scaling, a halo, and custom bone
+motion. Neither character is claimed to be a character model authored by
+Smashwinny. These are not Genshin Impact / Paimon assets.
+
+Environment models and textures:
+Stylized Nature MegaKit (Standard) by Quaternius
+Source: https://quaternius.com/packs/stylizednaturemegakit.html
+License: CC0 1.0 Universal
+https://creativecommons.org/publicdomain/zero/1.0/
+Distribution mirror: https://github.com/agentkaerf/FreeModels
+
+Procedural terrain, stone pavilion, exhibition objects, scene assembly,
+lighting and character motion: this website's source implementation.
