@@ -9,6 +9,7 @@ export async function loadCharacter(companion=false,source='/models/traveler.vrm
  const gltf=await loader.loadAsync(source),vrm=gltf.userData.vrm as VRM|undefined;
  if(!vrm?.humanoid)throw Error('请选择带有标准人形骨骼的 VRM 模型');
  VRMUtils.removeUnnecessaryVertices(vrm.scene);VRMUtils.combineSkeletons(vrm.scene);
+ VRMUtils.rotateVRM0(vrm);
  const root=new THREE.Group();root.add(vrm.scene);
  // Normalize all imported avatars to the same body height used by collision.
  const bounds=new THREE.Box3().setFromObject(vrm.scene),height=bounds.max.y-bounds.min.y;
