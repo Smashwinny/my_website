@@ -7,7 +7,7 @@ export async function POST(request:Request){
  try{
  const text=await request.text();if(new TextEncoder().encode(text).length>24000)return respond('消息过长。',413);
  const data=JSON.parse(text);
- if(!data||data.worldStyle!==undefined&&!['garden','mist','elements'].includes(data.worldStyle))return respond('主题格式错误。',400);
+ if(!data||data.worldStyle!==undefined&&!['garden','mist','elements','mario'].includes(data.worldStyle))return respond('主题格式错误。',400);
  if(data.discoveredProjects!==undefined&&(!Array.isArray(data.discoveredProjects)||data.discoveredProjects.length>100||data.discoveredProjects.some((name:unknown)=>typeof name!=='string'||name.length>200)))return respond('发现手记格式错误。',400);
  if(!Array.isArray(data.messages)||data.messages.length<1||data.messages.length>12||data.messages.some((m:Record<string,unknown>)=>!m||!['user','assistant'].includes(String(m.role))||typeof m.content!=='string'||m.content.length>4000))return respond('消息格式错误。',400);
  // Workers supports manual redirects. Reject non-2xx responses below without
