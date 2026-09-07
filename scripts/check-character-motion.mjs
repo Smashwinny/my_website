@@ -47,9 +47,11 @@ for(const name of ['traveler-male','traveler']){
  snapshot(actor,name,'idle');
  // Real controller-driven jump, not a hand-written sustained landing flag.
  const parent=new THREE.Group();parent.add(actor.root);actor.root.position.set(0,0,0);
+ for(const jumpAgainAt of [null,60]){
  const controller=new MistController();parent.position.copy(controller.position);controller.requestJump();
  let tookOff=false,landed=false,lowestStaff=Infinity;
- for(let i=0;i<240;i++){
+ for(let i=0;i<300;i++){
+  if(i===jumpAgainAt)controller.requestJump();
   parent.position.copy(controller.update(1/120,new THREE.Vector3()));clock+=1/120;
   actor.update(1/120,clock,{speed:0,metersPerSecond:0,grounded:controller.grounded,verticalVelocity:controller.velocity.y,landing:controller.landing,turn:0,engaged:false});
   outfit.update(1/120,0,0);parent.updateWorldMatrix(true,true);
@@ -58,7 +60,8 @@ for(const name of ['traveler-male','traveler']){
   actor.root.traverse(o=>assert(o.matrixWorld.elements.every(Number.isFinite)));
  }
  assert(tookOff&&landed);assert(lowestStaff>-.02,'staff cannot penetrate landing surface');
- console.log(name,'real jump + landing PASS', {lowestStaff});
+ console.log(name,jumpAgainAt===null?'real jump + landing PASS':'real double jump + landing PASS', {lowestStaff});
+ }
 }
 // Run the same movement timeline at common frame rates, including a 20Hz phone.
 const rates=[];
