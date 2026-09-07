@@ -22,7 +22,7 @@ export default function ElementWorld(props:WorldProps){
   <div className="element-atmosphere"/>
   <div className="element-copy"><p className="eyebrow">GENIUSQI / ELEMENTAL CHAPTER</p><h1>万象，<br/>在我掌中<span>。</span></h1><p>将一个想法，凝成一束力量。<br/>滑动掌中元素，遇见下一件作品。</p><span className="element-sign">{element.name}</span></div>
   <div className="element-portrait" onPointerDown={e=>{if(props.paused)return;gesture.current={x:e.clientX,y:e.clientY};(e.target as HTMLElement).setPointerCapture(e.pointerId)}} onPointerUp={e=>{if(!gesture.current)return;const direction=swipeDirection(e.clientX-gesture.current.x,e.clientY-gesture.current.y);gesture.current=null;if(direction){lastSwipe.current=performance.now();move(direction)}}} onPointerCancel={()=>{gesture.current=null}}>
-   <img src="/models/elements/hero-titan.webp" alt="保留参考人物面貌与眼镜的绿色巨人，暗蓝衣甲与强烈明暗光影下伸手托起元素之力" draggable={false} onLoad={()=>setReady(true)} onError={()=>{setFailed(true);setReady(true)}}/>
+   <img src="/models/elements/hero-titan-face.webp" alt="保留参考人物面貌与眼镜的绿色巨人，暗蓝衣甲与强烈明暗光影下伸手托起元素之力" draggable={false} onLoad={()=>setReady(true)} onError={()=>{setFailed(true);setReady(true)}}/>
    <div className="element-hand-light"/>
    <button className="element-orb" aria-label={`查看作品 ${project?.name||''}，${element.title}`} onClick={()=>{if(performance.now()-lastSwipe.current>300&&!props.paused&&project)props.onSelect(index)}}><canvas ref={canvas} aria-hidden="true"/></button>
    {!ready&&<div className="element-image-loading" role="status">正在唤醒掌中万象<div className="asset-progress" role="progressbar" aria-label="主体画面加载中"><i className="indeterminate"/></div></div>}

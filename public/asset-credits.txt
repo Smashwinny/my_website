@@ -42,3 +42,5 @@ No source news footage, logos, captions or public-figure likeness is included in
 Fire, water and lightning effects: original real-time Canvas code. Optimized portrait: /models/elements/hero.webp.
 
 Green titan variant: /models/elements/hero-titan.webp, generated from the existing owner-reference portrait with preserved identity and a stronger chiaroscuro treatment. Original portrait retained for rollback.
+
+Face-restored variant: /models/elements/hero-titan-face.webp. Natural facial identity restored using the earlier owner-reference portrait, with fuller short hair and a subtly lower hairline; titan body retained.
