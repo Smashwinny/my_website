@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Anubis",
+    "description": "secret saver",
+    "language": "Java",
+    "url": "https://github.com/Smashwinny/Anubis",
+    "updated": "2026-09-01T09:41:56Z"
+  },
+  {
+    "name": "bill",
+    "description": "easy record your costs",
+    "language": "Kotlin",
+    "url": "https://github.com/Smashwinny/bill",
+    "updated": "2026-08-24T11:58:51Z"
+  },
+  {
+    "name": "codex_company",
+    "description": "show usage for codex in Linux(Ubuntu)",
+    "language": "Python",
+    "url": "https://github.com/Smashwinny/codex_company",
+    "updated": "2026-08-25T10:05:47Z"
+  },
+  {
+    "name": "reminder",
+    "description": "remind the mission",
+    "language": "Java",
+    "url": "https://github.com/Smashwinny/reminder",
+    "updated": "2026-09-02T05:39:43Z"
+  },
+  {
+    "name": "ros2bag_replytool",
+    "description": "Convenient local playback for investigation issues",
+    "language": "Python",
+    "url": "https://github.com/Smashwinny/ros2bag_replytool",
+    "updated": "2026-08-25T09:07:22Z"
+  },
+  {
+    "name": "system_tool",
+    "description": "项目详情与使用说明请查看 GitHub 仓库。",
+    "language": "Python",
+    "url": "https://github.com/Smashwinny/system_tool",
+    "updated": "2026-09-01T14:13:18Z"
+  },
+  {
+    "name": "terminal_manager",
+    "description": "项目详情与使用说明请查看 GitHub 仓库。",
+    "language": "Python",
+    "url": "https://github.com/Smashwinny/terminal_manager",
+    "updated": "2026-09-01T09:46:57Z"
+  },
+  {
+    "name": "Training_Manual_For_Agents",
+    "description": "项目详情与使用说明请查看 GitHub 仓库。",
+    "language": "PowerShell",
+    "url": "https://github.com/Smashwinny/Training_Manual_For_Agents",
+    "updated": "2026-08-11T20:17:32Z"
+  }
+]
