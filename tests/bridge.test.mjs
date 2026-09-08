@@ -10,3 +10,10 @@ test('fails honestly when Codex fails',async t=>{const url=await serve(t,async()
 test('CLI invocation disables tools and cannot interpolate prompt as shell',()=>{const args=codexArgs('/output','/workspace');assert.ok(args.includes('read-only'));assert.ok(args.includes('features.shell_tool=false'));assert.ok(args.includes('--ignore-user-config'));assert.equal(args.at(-1),'-')});
 test('mist companion only receives discovered project descriptions',()=>{const projects=[{name:'found-repo',description:'known description'},{name:'hidden-repo',description:'undiscovered description'}];const prompt=companionPrompt([],projects,['found-repo']);assert.match(prompt,/known description/);assert.doesNotMatch(prompt,/hidden-repo|undiscovered description/);assert.doesNotMatch(companionPrompt([],projects,[]),/known description|undiscovered description/);assert.match(companionPrompt([],projects),/undiscovered description/);assert.equal(validateDiscoveries({all:true}),false)});
 test('bridge preserves empty discovery list instead of treating it as full access',async t=>{const url=await serve(t,async(_,options)=>{assert.deepEqual(options.discoveredProjects,[]);return 'continue exploring'});const response=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${token}`},body:JSON.stringify({messages:[{role:'user',content:'What is here?'}],discoveredProjects:[]})});assert.equal(response.status,200)});
+
+test('monument style reaches the companion and unknown styles are rejected',async t=>{
+ let calls=0;const url=await serve(t,async(_,options)=>{calls++;assert.equal(options.worldStyle,'monument');return '到回转之心转桥';});
+ const send=style=>fetch(url,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${token}`},body:JSON.stringify({messages:[{role:'user',content:'怎么走？'}],worldStyle:style})});
+ assert.equal((await send('monument')).status,200);assert.equal((await send('unknown')).status,400);assert.equal(calls,1);
+ const prompt=companionPrompt([],[],undefined,'monument');assert.match(prompt,/向导小齐/);assert.match(prompt,/回声之庭.*回转之心.*九十度/);assert.doesNotMatch(prompt,/当前为雾隐山海/);
+});

@@ -6,7 +6,7 @@ const keys=new Set();
 function visit(key){if(keys.has(key))return;keys.add(key);for(const imported of manifest[key]?.imports??[])visit(imported)}
 visit('virtual:vinext-app-browser-entry');visit('app/page.tsx');
 const files=[...keys].map(key=>manifest[key].file);
-assert(!files.some(file=>/characters|mist-world|mario-world|element-world|\/world-/.test(file)),'world code must stay lazy');
+assert(!files.some(file=>/characters|mist-world|mario-world|element-world|monument-world|\/world-/.test(file)),'world code must stay lazy');
 const rows=await Promise.all(files.map(async file=>{const bytes=await readFile('dist/client/'+file);return{file,bytes:bytes.length,gzipBytes:gzipSync(bytes).length}}));
 const gzipBytes=rows.reduce((sum,row)=>sum+row.gzipBytes,0);
 assert(gzipBytes<180000,'startup JavaScript budget is 180 KB gzip, excluding HTML/CSS');
