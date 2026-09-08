@@ -12,7 +12,13 @@ export async function POST(request:Request){
  if(!Array.isArray(data.messages)||data.messages.length<1||data.messages.length>12||data.messages.some((m:Record<string,unknown>)=>!m||!['user','assistant'].includes(String(m.role))||typeof m.content!=='string'||m.content.length>4000))return respond('消息格式错误。',400);
  // Workers supports manual redirects. Reject non-2xx responses below without
  // following a redirect or forwarding the bridge credential to another host.
- const upstream=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${bridgeToken}`},body:JSON.stringify({messages:data.messages,discoveredProjects:data.discoveredProjects,worldStyle:data.worldStyle}),signal:AbortSignal.timeout(105000),redirect:'manual'});
+ const signal=AbortSignal.timeout(105000);
+ const forward=(worldStyle:string|undefined)=>fetch(url,{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${bridgeToken}`},body:JSON.stringify({messages:data.messages,discoveredProjects:data.discoveredProjects,worldStyle}),signal,redirect:'manual'});
+ let upstream=await forward(data.worldStyle);
+ // Older standalone bridges can still discuss projects before their owner
+ // restarts them with the new theme context. Retry only this exact validation
+ // rejection, which occurs before the bridge invokes a provider.
+ if(data.worldStyle==='monument'&&upstream.status===400){const failure=await upstream.clone().json().catch(()=>null) as {error?:unknown}|null;if(failure?.error==='Invalid world style')upstream=await forward(undefined);}
  if(!upstream.ok)return respond(upstream.status===429?`${data.worldStyle==='elements'?'小浩':Array.isArray(data.discoveredProjects)?'小津':'小齐'}正在回答其他问题，请稍后重试。`:'本机 Codex 暂时不可用，请稍后重试。',upstream.status===429?429:502);
  const reply=await upstream.json() as {reply?:unknown};if(typeof reply.reply!=='string')return respond('连接服务返回格式错误。',502);
  return Response.json({reply:reply.reply},{headers:{'Cache-Control':'no-store'}});
