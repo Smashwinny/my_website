@@ -1,0 +1,34 @@
+[
+  {
+    "model": "traveler-male-web",
+    "raw_sha256": "35b8d90490a9f284f478fa1f124270f5ea29020206f7e48819e3bf5ba3d7a02f",
+    "before": 1993467,
+    "after": 1968536,
+    "reduction": 0.012506351998804122,
+    "seconds": 20.07341170000018
+  },
+  {
+    "model": "traveler-web",
+    "raw_sha256": "036c61dd72cbecb7a57471c197bb6da485d5b2c8b5db95033a10d287086cce24",
+    "before": 1538791,
+    "after": 1503758,
+    "reduction": 0.022766574538062634,
+    "seconds": 16.272131700000045
+  },
+  {
+    "model": "traveler-male-lite",
+    "raw_sha256": "7fce8dfea8a196946de18fb8a6bd6173d9bf3bb1058bf83a6aadb12d091b4817",
+    "before": 1473232,
+    "after": 1451832,
+    "reduction": 0.014525885943286632,
+    "seconds": 19.566147699999874
+  },
+  {
+    "model": "traveler-lite",
+    "raw_sha256": "103b6eec534dc1880ea0805b9907872941164b5b0f68bab2e1e3d910ac0b4521",
+    "before": 1339681,
+    "after": 1305332,
+    "reduction": 0.025639685865515793,
+    "seconds": 13.530063600000176
+  }
+]

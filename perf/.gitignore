@@ -1,0 +1,8 @@
+# Diagnostic pilots and naturally animated screenshots are kept local.
+bench/pilot*.json
+bench/pilot*.png
+bench/base-mobile*.json
+bench/base-mobile*.png
+bench/base-garden.*.png
+bench/paired-garden.*.png
+bench/mist-smoke.*.png

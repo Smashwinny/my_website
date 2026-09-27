@@ -1,0 +1,259 @@
+{
+  "started": "2026-09-27 11:08:41",
+  "config": {
+    "url": "http://127.0.0.1:3101",
+    "url_b": null,
+    "scene": "mist",
+    "runs": 1,
+    "width": 1440,
+    "profile": "fast4g",
+    "out": "perf/bench/mist-smoke.json"
+  },
+  "ready": "!!document.querySelector('.world canvas') && !document.querySelector('.world-loading,.scene-loading-note,.webgl-error,.asset-warning') && !!document.querySelector('.jump-button')",
+  "results": {
+    "A": {
+      "url": "http://127.0.0.1:3101",
+      "runs": [
+        {
+          "url": "http://127.0.0.1:3101",
+          "ok": true,
+          "version": "A",
+          "brotli_supported": false,
+          "ready": 8897.899999999907,
+          "lcp": 692,
+          "longtask": 2274,
+          "fcp": 692,
+          "dcl": 477.10000000009313,
+          "load": 953.6000000000931,
+          "requests": 16,
+          "bytes_total": 3410532,
+          "bytes_by_type": {
+            "link": 42170,
+            "script": 1011483,
+            "other": 205616,
+            "fetch": 1993767,
+            "img": 153341
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6910
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/mist/rock-normal.jpg",
+              "responseEnd": 4510
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/mist/rock-color.jpg",
+              "responseEnd": 4431
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3921
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2354
+            }
+          ],
+          "home_ready": 1114.7999999998137,
+          "click_to_ready": 7773.600000000093,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3101/_next/static/css/index.Bsy8EddG.css",
+              "start": 43.5,
+              "end": 376.10000000009313,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 43.799999999813735,
+              "end": 82.10000000009313,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/index-BfMUb83_.js",
+              "start": 43.799999999813735,
+              "end": 905.1999999997206,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 43.89999999990687,
+              "end": 922.6000000000931,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/layout-segment-context-oL9HFSXL.js",
+              "start": 44,
+              "end": 82.1999999997206,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/page-D3yP2ItK.js",
+              "start": 44,
+              "end": 252.39999999990687,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 44.10000000009313,
+              "end": 143.1999999997206,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 44.1999999997206,
+              "end": 142.79999999981374,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/favicon.ico",
+              "start": 958.5,
+              "end": 999,
+              "bytes": 2395,
+              "decoded": 6286,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "start": 1156.1000000000931,
+              "end": 6910.299999999814,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/mist-world-DuipPJLj.js",
+              "start": 1158,
+              "end": 1367.3999999999069,
+              "bytes": 23495,
+              "decoded": 23195,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1158.2999999998137,
+              "end": 2354,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1158.3999999999069,
+              "end": 3920.600000000093,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/mist/rock-color.jpg",
+              "start": 4016.6999999997206,
+              "end": 4431.399999999907,
+              "bytes": 66170,
+              "decoded": 65870,
+              "type": "img"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/mist/rock-normal.jpg",
+              "start": 4016.7999999998137,
+              "end": 4510,
+              "bytes": 87171,
+              "decoded": 86871,
+              "type": "img"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        }
+      ],
+      "summary": {
+        "n": 1,
+        "n_ok": 1,
+        "ready": {
+          "p50": 8897.9,
+          "p75": 8897.9,
+          "p95": 8897.9
+        },
+        "lcp": {
+          "p50": 692,
+          "p75": 692,
+          "p95": 692
+        },
+        "fcp": {
+          "p50": 692,
+          "p75": 692,
+          "p95": 692
+        },
+        "dcl": {
+          "p50": 477.1,
+          "p75": 477.1,
+          "p95": 477.1
+        },
+        "load": {
+          "p50": 953.6,
+          "p75": 953.6,
+          "p95": 953.6
+        },
+        "longtask": {
+          "p50": 2274,
+          "p75": 2274,
+          "p95": 2274
+        },
+        "requests": {
+          "p50": 16,
+          "p75": 16,
+          "p95": 16
+        },
+        "bytes_total": {
+          "p50": 3410532,
+          "p75": 3410532,
+          "p95": 3410532
+        },
+        "click_to_ready": {
+          "p50": 7773.6,
+          "p75": 7773.6,
+          "p95": 7773.6
+        },
+        "home_ready": {
+          "p50": 1114.8,
+          "p75": 1114.8,
+          "p95": 1114.8
+        }
+      }
+    }
+  },
+  "finished": "2026-09-27 11:08:52"
+}

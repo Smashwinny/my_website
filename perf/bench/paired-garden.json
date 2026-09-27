@@ -1,0 +1,3650 @@
+{
+  "started": "2026-09-27 11:03:46",
+  "config": {
+    "url": "http://127.0.0.1:3100",
+    "url_b": "http://127.0.0.1:3101",
+    "scene": "garden",
+    "runs": 10,
+    "width": 1440,
+    "profile": "fast4g",
+    "out": "perf/bench/paired-garden.json"
+  },
+  "ready": "!!document.querySelector('.world canvas') && !document.querySelector('.world-loading,.scene-loading-note,.webgl-error,.asset-warning') && !!document.querySelector('.jump-button')",
+  "results": {
+    "A": {
+      "url": "http://127.0.0.1:3100",
+      "runs": [
+        {
+          "url": "http://127.0.0.1:3100",
+          "ok": true,
+          "version": "A",
+          "brotli_supported": false,
+          "ready": 8820.600000000093,
+          "lcp": 696,
+          "longtask": 2764,
+          "fcp": 696,
+          "dcl": 456.79999999981374,
+          "load": 964.3999999999069,
+          "requests": 16,
+          "bytes_total": 3280574,
+          "bytes_by_type": {
+            "link": 42170,
+            "other": 205614,
+            "script": 1027072,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 7584
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 7569
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6637
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3943
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2390
+            }
+          ],
+          "home_ready": 1048.1000000000931,
+          "click_to_ready": 7762.5,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3100/_next/static/css/index.Bsy8EddG.css",
+              "start": 45.1999999997206,
+              "end": 364.39999999990687,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/index-CxgHG1IN.js",
+              "start": 45.60000000009313,
+              "end": 904.7999999998137,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 46.10000000009313,
+              "end": 73.29999999981374,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 46.1999999997206,
+              "end": 935.1999999997206,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/layout-segment-context-BjNYKixI.js",
+              "start": 46.299999999813735,
+              "end": 84.5,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/page-Dtq5YXNb.js",
+              "start": 46.39999999990687,
+              "end": 241.29999999981374,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 46.6999999997206,
+              "end": 118.5,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 46.799999999813735,
+              "end": 134,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/favicon.ico",
+              "start": 973.1999999997206,
+              "end": 1012.1000000000931,
+              "bytes": 2393,
+              "decoded": 6286,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "start": 1129.8999999999069,
+              "end": 6636.799999999814,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/world-CHKRi-z6.js",
+              "start": 1132.1000000000931,
+              "end": 1475.3999999999069,
+              "bytes": 39084,
+              "decoded": 38784,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1132.2999999998137,
+              "end": 2390.1999999997206,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1132.5,
+              "end": 3942.600000000093,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 7530.699999999721,
+              "end": 7568.600000000093,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "start": 7530.899999999907,
+              "end": 7583.899999999907,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3100",
+          "ok": true,
+          "version": "A",
+          "brotli_supported": false,
+          "ready": 7646.300000000279,
+          "lcp": 488,
+          "longtask": 1259,
+          "fcp": 488,
+          "dcl": 467.10000000009313,
+          "load": 951,
+          "requests": 15,
+          "bytes_total": 3278181,
+          "bytes_by_type": {
+            "link": 42170,
+            "other": 203221,
+            "script": 1027072,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 7476
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 7462
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6530
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3836
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2292
+            }
+          ],
+          "home_ready": 1013.5,
+          "click_to_ready": 6627.399999999907,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3100/_next/static/css/index.Bsy8EddG.css",
+              "start": 53.200000000186265,
+              "end": 374.40000000037253,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/index-CxgHG1IN.js",
+              "start": 53.40000000037253,
+              "end": 912.9000000003725,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 53.60000000009313,
+              "end": 94.70000000018626,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/layout-segment-context-BjNYKixI.js",
+              "start": 53.60000000009313,
+              "end": 94.8000000002794,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 53.60000000009313,
+              "end": 928.6000000000931,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 53.700000000186265,
+              "end": 157,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 53.700000000186265,
+              "end": 156.70000000018626,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/page-Dtq5YXNb.js",
+              "start": 53.700000000186265,
+              "end": 250,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "start": 1036.9000000003725,
+              "end": 6529.5,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/world-CHKRi-z6.js",
+              "start": 1038.3000000002794,
+              "end": 1376.2000000001863,
+              "bytes": 39084,
+              "decoded": 38784,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1038.5,
+              "end": 2291.8000000002794,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1038.6000000000931,
+              "end": 3836.100000000093,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 7410.300000000279,
+              "end": 7461.600000000093,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "start": 7410.5,
+              "end": 7476.100000000093,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3100",
+          "ok": true,
+          "version": "A",
+          "brotli_supported": false,
+          "ready": 7607.100000000093,
+          "lcp": 476,
+          "longtask": 1201,
+          "fcp": 476,
+          "dcl": 460.5,
+          "load": 955.6000000000931,
+          "requests": 15,
+          "bytes_total": 3278181,
+          "bytes_by_type": {
+            "link": 42170,
+            "other": 203221,
+            "script": 1027072,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 7498
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 7483
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6539
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3845
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2296
+            }
+          ],
+          "home_ready": 1021.3999999999069,
+          "click_to_ready": 6580.5,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3100/_next/static/css/index.Bsy8EddG.css",
+              "start": 49.1999999997206,
+              "end": 370.6999999997206,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/index-CxgHG1IN.js",
+              "start": 49.5,
+              "end": 900.1999999997206,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 49.60000000009313,
+              "end": 91.1999999997206,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 49.6999999997206,
+              "end": 932.3999999999069,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/layout-segment-context-BjNYKixI.js",
+              "start": 49.799999999813735,
+              "end": 91.39999999990687,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 49.89999999990687,
+              "end": 137,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/page-Dtq5YXNb.js",
+              "start": 49.89999999990687,
+              "end": 246.29999999981374,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 50,
+              "end": 152,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "start": 1044.3999999999069,
+              "end": 6538.699999999721,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/world-CHKRi-z6.js",
+              "start": 1046.1999999997206,
+              "end": 1383.1999999997206,
+              "bytes": 39084,
+              "decoded": 38784,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1046.5,
+              "end": 2296.2999999998137,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1046.6000000000931,
+              "end": 3845,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 7446.899999999907,
+              "end": 7483.100000000093,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "start": 7447.199999999721,
+              "end": 7498.199999999721,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3100",
+          "ok": true,
+          "version": "A",
+          "brotli_supported": false,
+          "ready": 7609.5,
+          "lcp": 496,
+          "longtask": 1232,
+          "fcp": 496,
+          "dcl": 478.29999999981374,
+          "load": 942.7999999998137,
+          "requests": 15,
+          "bytes_total": 3278181,
+          "bytes_by_type": {
+            "link": 42170,
+            "other": 203221,
+            "script": 1027072,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 7514
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 7500
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6534
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3836
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2288
+            }
+          ],
+          "home_ready": 1010.8999999999069,
+          "click_to_ready": 6593.5,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3100/_next/static/css/index.Bsy8EddG.css",
+              "start": 47.89999999990687,
+              "end": 381.89999999990687,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/index-CxgHG1IN.js",
+              "start": 48,
+              "end": 904.8999999999069,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 48.10000000009313,
+              "end": 79.29999999981374,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/layout-segment-context-BjNYKixI.js",
+              "start": 48.10000000009313,
+              "end": 89.29999999981374,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 48.10000000009313,
+              "end": 920.7999999998137,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/page-Dtq5YXNb.js",
+              "start": 48.200000000186265,
+              "end": 243.39999999990687,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 48.299999999813735,
+              "end": 120.60000000009313,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 48.299999999813735,
+              "end": 143.10000000009313,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "start": 1033.5,
+              "end": 6534.299999999814,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/world-CHKRi-z6.js",
+              "start": 1034.8999999999069,
+              "end": 1371.3999999999069,
+              "bytes": 39084,
+              "decoded": 38784,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1035.1000000000931,
+              "end": 2288.399999999907,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1035.2000000001863,
+              "end": 3836.100000000093,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 7449.5,
+              "end": 7500.399999999907,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "start": 7449.600000000093,
+              "end": 7514.399999999907,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3100",
+          "ok": true,
+          "version": "A",
+          "brotli_supported": false,
+          "ready": 7690.299999999814,
+          "lcp": 484,
+          "longtask": 1303,
+          "fcp": 484,
+          "dcl": 464.60000000009313,
+          "load": 950.5,
+          "requests": 15,
+          "bytes_total": 3278181,
+          "bytes_by_type": {
+            "link": 42170,
+            "script": 1027072,
+            "other": 203221,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 7581
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 7566
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6545
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3844
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2309
+            }
+          ],
+          "home_ready": 1023.1000000000931,
+          "click_to_ready": 6661.799999999814,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3100/_next/static/css/index.Bsy8EddG.css",
+              "start": 45.299999999813735,
+              "end": 368.10000000009313,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 45.5,
+              "end": 87.1999999997206,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/index-CxgHG1IN.js",
+              "start": 45.5,
+              "end": 911.6999999997206,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/layout-segment-context-BjNYKixI.js",
+              "start": 45.60000000009313,
+              "end": 87.39999999990687,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 45.60000000009313,
+              "end": 926.8999999999069,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 45.6999999997206,
+              "end": 148,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 45.6999999997206,
+              "end": 148.1999999997206,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/page-Dtq5YXNb.js",
+              "start": 45.6999999997206,
+              "end": 243,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "start": 1051.2999999998137,
+              "end": 6544.699999999721,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/world-CHKRi-z6.js",
+              "start": 1052.8999999999069,
+              "end": 1395.8999999999069,
+              "bytes": 39084,
+              "decoded": 38784,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1053.1000000000931,
+              "end": 2308.5,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1053.1999999997206,
+              "end": 3844.1999999997206,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 7521.100000000093,
+              "end": 7565.799999999814,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "start": 7521.5,
+              "end": 7581,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3100",
+          "ok": true,
+          "version": "A",
+          "brotli_supported": false,
+          "ready": 7635.800000000279,
+          "lcp": 488,
+          "longtask": 1256,
+          "fcp": 488,
+          "dcl": 468.70000000018626,
+          "load": 958,
+          "requests": 15,
+          "bytes_total": 3278181,
+          "bytes_by_type": {
+            "link": 42170,
+            "script": 1027072,
+            "other": 203221,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 7527
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 7512
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6536
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3846
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2298
+            }
+          ],
+          "home_ready": 1020.7000000001863,
+          "click_to_ready": 6610.200000000186,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3100/_next/static/css/index.Bsy8EddG.css",
+              "start": 56.10000000009313,
+              "end": 376.89999999990687,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 56.3000000002794,
+              "end": 97.60000000009313,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/index-CxgHG1IN.js",
+              "start": 56.3000000002794,
+              "end": 918.5,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 56.3000000002794,
+              "end": 934.3000000002794,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/layout-segment-context-BjNYKixI.js",
+              "start": 56.39999999990687,
+              "end": 97.89999999990687,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 56.39999999990687,
+              "end": 155.70000000018626,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/page-Dtq5YXNb.js",
+              "start": 56.39999999990687,
+              "end": 252.60000000009313,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 56.5,
+              "end": 155.5,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "start": 1043.8999999999069,
+              "end": 6535.700000000186,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/world-CHKRi-z6.js",
+              "start": 1045.8999999999069,
+              "end": 1382.8999999999069,
+              "bytes": 39084,
+              "decoded": 38784,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1046.3000000002794,
+              "end": 2297.899999999907,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1046.6000000000931,
+              "end": 3846,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 7462.700000000186,
+              "end": 7512.100000000093,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "start": 7463.100000000093,
+              "end": 7526.899999999907,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3100",
+          "ok": true,
+          "version": "A",
+          "brotli_supported": false,
+          "ready": 7610.300000000279,
+          "lcp": 472,
+          "longtask": 1225,
+          "fcp": 472,
+          "dcl": 451.3000000002794,
+          "load": 955.7000000001863,
+          "requests": 15,
+          "bytes_total": 3278181,
+          "bytes_by_type": {
+            "link": 42170,
+            "other": 203221,
+            "script": 1027072,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 7516
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 7501
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6538
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3854
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2308
+            }
+          ],
+          "home_ready": 1038,
+          "click_to_ready": 6565.600000000093,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3100/_next/static/css/index.Bsy8EddG.css",
+              "start": 52,
+              "end": 356,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/index-CxgHG1IN.js",
+              "start": 52.10000000009313,
+              "end": 916.1000000000931,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 52.200000000186265,
+              "end": 92.20000000018626,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/layout-segment-context-BjNYKixI.js",
+              "start": 52.3000000002794,
+              "end": 108.20000000018626,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 52.3000000002794,
+              "end": 931.4000000003725,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 52.40000000037253,
+              "end": 139.10000000009313,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/page-Dtq5YXNb.js",
+              "start": 52.40000000037253,
+              "end": 262.3000000002794,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 52.5,
+              "end": 169.8000000002794,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "start": 1063.8000000002794,
+              "end": 6537.9000000003725,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/world-CHKRi-z6.js",
+              "start": 1065.3000000002794,
+              "end": 1396.4000000003725,
+              "bytes": 39084,
+              "decoded": 38784,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1065.7000000001863,
+              "end": 2307.8000000002794,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1065.8000000002794,
+              "end": 3853.5,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 7451.100000000093,
+              "end": 7500.9000000003725,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "start": 7451.4000000003725,
+              "end": 7515.700000000186,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3100",
+          "ok": true,
+          "version": "A",
+          "brotli_supported": false,
+          "ready": 7650.199999999721,
+          "lcp": 496,
+          "longtask": 1272,
+          "fcp": 496,
+          "dcl": 480.10000000009313,
+          "load": 977,
+          "requests": 15,
+          "bytes_total": 3278181,
+          "bytes_by_type": {
+            "link": 42170,
+            "other": 203221,
+            "script": 1027072,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 7538
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 7522
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6545
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3866
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2314
+            }
+          ],
+          "home_ready": 1045.6000000000931,
+          "click_to_ready": 6599.199999999721,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3100/_next/static/css/index.Bsy8EddG.css",
+              "start": 57.10000000009313,
+              "end": 388.60000000009313,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/index-CxgHG1IN.js",
+              "start": 57.1999999997206,
+              "end": 923.7999999998137,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 57.299999999813735,
+              "end": 97.60000000009313,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/layout-segment-context-BjNYKixI.js",
+              "start": 57.39999999990687,
+              "end": 113.29999999981374,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 57.39999999990687,
+              "end": 953.8999999999069,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 57.5,
+              "end": 144.60000000009313,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/page-Dtq5YXNb.js",
+              "start": 57.5,
+              "end": 268.29999999981374,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 57.60000000009313,
+              "end": 160.60000000009313,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "start": 1068.8999999999069,
+              "end": 6544.5,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/world-CHKRi-z6.js",
+              "start": 1070.3999999999069,
+              "end": 1403.8999999999069,
+              "bytes": 39084,
+              "decoded": 38784,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1070.5,
+              "end": 2314.399999999907,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1070.6999999997206,
+              "end": 3866.1999999997206,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 7481.399999999907,
+              "end": 7522.299999999814,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "start": 7481.799999999814,
+              "end": 7538.299999999814,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3100",
+          "ok": true,
+          "version": "A",
+          "brotli_supported": false,
+          "ready": 7624.600000000093,
+          "lcp": 496,
+          "longtask": 1265,
+          "fcp": 496,
+          "dcl": 475.70000000018626,
+          "load": 964.3000000002794,
+          "requests": 15,
+          "bytes_total": 3278181,
+          "bytes_by_type": {
+            "link": 42170,
+            "script": 1027072,
+            "other": 203221,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 7519
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 7505
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6530
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3858
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2304
+            }
+          ],
+          "home_ready": 1033.8999999999069,
+          "click_to_ready": 6585.200000000186,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3100/_next/static/css/index.Bsy8EddG.css",
+              "start": 50.10000000009313,
+              "end": 382.60000000009313,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 50.39999999990687,
+              "end": 90.70000000018626,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/index-CxgHG1IN.js",
+              "start": 50.39999999990687,
+              "end": 908.3999999999069,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 50.39999999990687,
+              "end": 939.3000000002794,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/layout-segment-context-BjNYKixI.js",
+              "start": 50.60000000009313,
+              "end": 90.8000000002794,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 50.60000000009313,
+              "end": 151.39999999990687,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/page-Dtq5YXNb.js",
+              "start": 50.60000000009313,
+              "end": 243.3000000002794,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 50.700000000186265,
+              "end": 151.10000000009313,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "start": 1057.1000000000931,
+              "end": 6529.700000000186,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/world-CHKRi-z6.js",
+              "start": 1058.7000000001863,
+              "end": 1405,
+              "bytes": 39084,
+              "decoded": 38784,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1058.8999999999069,
+              "end": 2304.3000000002794,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1059,
+              "end": 3858.399999999907,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 7461.5,
+              "end": 7505,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "start": 7461.700000000186,
+              "end": 7519.399999999907,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3100",
+          "ok": true,
+          "version": "A",
+          "brotli_supported": false,
+          "ready": 7599.600000000093,
+          "lcp": 472,
+          "longtask": 1270,
+          "fcp": 472,
+          "dcl": 451.79999999981374,
+          "load": 951.1000000000931,
+          "requests": 15,
+          "bytes_total": 3278181,
+          "bytes_by_type": {
+            "link": 42170,
+            "other": 203221,
+            "script": 1027072,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 7499
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 7484
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6504
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3833
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2296
+            }
+          ],
+          "home_ready": 1017.7999999998137,
+          "click_to_ready": 6576.5,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3100/_next/static/css/index.Bsy8EddG.css",
+              "start": 49.200000000186265,
+              "end": 352.79999999981374,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/index-CxgHG1IN.js",
+              "start": 49.5,
+              "end": 912.7999999998137,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 49.60000000009313,
+              "end": 104.60000000009313,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 49.700000000186265,
+              "end": 928.3999999999069,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/layout-segment-context-BjNYKixI.js",
+              "start": 49.799999999813735,
+              "end": 104.70000000018626,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/page-Dtq5YXNb.js",
+              "start": 49.799999999813735,
+              "end": 259,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 49.89999999990687,
+              "end": 165.10000000009313,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 49.89999999990687,
+              "end": 165.39999999990687,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/traveler-male-web.vrm.bin",
+              "start": 1039.5,
+              "end": 6503.799999999814,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/world-CHKRi-z6.js",
+              "start": 1041.1000000000931,
+              "end": 1378.7000000001863,
+              "bytes": 39084,
+              "decoded": 38784,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1041.3999999999069,
+              "end": 2295.7999999998137,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1041.5,
+              "end": 3832.600000000093,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 7433.399999999907,
+              "end": 7484,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3100/models/nature-web/Flower_4_Group.gltf",
+              "start": 7433.600000000093,
+              "end": 7499.399999999907,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        }
+      ],
+      "summary": {
+        "n": 10,
+        "n_ok": 10,
+        "ready": {
+          "p50": 7630.2,
+          "p75": 7649.2,
+          "p95": 8312.0
+        },
+        "lcp": {
+          "p50": 488.0,
+          "p75": 496.0,
+          "p95": 606.0
+        },
+        "fcp": {
+          "p50": 488.0,
+          "p75": 496.0,
+          "p95": 606.0
+        },
+        "dcl": {
+          "p50": 465.9,
+          "p75": 474.0,
+          "p95": 479.3
+        },
+        "load": {
+          "p50": 955.7,
+          "p75": 962.7,
+          "p95": 971.3
+        },
+        "longtask": {
+          "p50": 1262.0,
+          "p75": 1271.5,
+          "p95": 2106.6
+        },
+        "requests": {
+          "p50": 15.0,
+          "p75": 15.0,
+          "p95": 15.6
+        },
+        "bytes_total": {
+          "p50": 3278181.0,
+          "p75": 3278181.0,
+          "p95": 3279497.1
+        },
+        "click_to_ready": {
+          "p50": 6596.3,
+          "p75": 6623.1,
+          "p95": 7267.2
+        },
+        "home_ready": {
+          "p50": 1022.2,
+          "p75": 1037.0,
+          "p95": 1047.0
+        }
+      }
+    },
+    "B": {
+      "url": "http://127.0.0.1:3101",
+      "runs": [
+        {
+          "url": "http://127.0.0.1:3101",
+          "ok": true,
+          "version": "B",
+          "brotli_supported": false,
+          "ready": 6953.300000000279,
+          "lcp": 556,
+          "longtask": 1321,
+          "fcp": 556,
+          "dcl": 538.7000000001863,
+          "load": 1042.1000000000931,
+          "requests": 16,
+          "bytes_total": 3280584,
+          "bytes_by_type": {
+            "link": 42170,
+            "other": 205616,
+            "script": 1027081,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 6839
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 6824
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6624
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3947
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2412
+            }
+          ],
+          "home_ready": 1114,
+          "click_to_ready": 5833.800000000279,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3101/_next/static/css/index.Bsy8EddG.css",
+              "start": 109.10000000009313,
+              "end": 444.3000000002794,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/index-BfMUb83_.js",
+              "start": 109.39999999990687,
+              "end": 989.5,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 109.5,
+              "end": 150.10000000009313,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/layout-segment-context-oL9HFSXL.js",
+              "start": 109.60000000009313,
+              "end": 150.3000000002794,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/page-D3yP2ItK.js",
+              "start": 109.60000000009313,
+              "end": 318.89999999990687,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 109.60000000009313,
+              "end": 1020.3000000002794,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 109.70000000018626,
+              "end": 210.20000000018626,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 109.8000000002794,
+              "end": 209.89999999990687,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/favicon.ico",
+              "start": 1047.5,
+              "end": 1082.6000000000931,
+              "bytes": 2395,
+              "decoded": 6286,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "start": 1137.3000000002794,
+              "end": 6623.899999999907,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/world-CJVTHipc.js",
+              "start": 1138.8000000002794,
+              "end": 1485.8000000002794,
+              "bytes": 39093,
+              "decoded": 38793,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1139.1000000000931,
+              "end": 2412.100000000093,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1139.2000000001863,
+              "end": 3947,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 6777,
+              "end": 6824.100000000093,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "start": 6777.100000000093,
+              "end": 6839.399999999907,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3101",
+          "ok": true,
+          "version": "B",
+          "brotli_supported": false,
+          "ready": 6864.4000000003725,
+          "lcp": 496,
+          "longtask": 1250,
+          "fcp": 496,
+          "dcl": 474.70000000018626,
+          "load": 959.4000000003725,
+          "requests": 15,
+          "bytes_total": 3278189,
+          "bytes_by_type": {
+            "link": 42170,
+            "other": 203221,
+            "script": 1027081,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 6768
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 6753
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6550
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3862
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2295
+            }
+          ],
+          "home_ready": 1025,
+          "click_to_ready": 5834.200000000186,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3101/_next/static/css/index.Bsy8EddG.css",
+              "start": 45.10000000009313,
+              "end": 378.8000000002794,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/index-BfMUb83_.js",
+              "start": 45.3000000002794,
+              "end": 920.3000000002794,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 45.40000000037253,
+              "end": 86.10000000009313,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 45.40000000037253,
+              "end": 935.5,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/layout-segment-context-oL9HFSXL.js",
+              "start": 45.5,
+              "end": 86.3000000002794,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 45.60000000009313,
+              "end": 146.5,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/page-D3yP2ItK.js",
+              "start": 45.60000000009313,
+              "end": 254.10000000009313,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 45.700000000186265,
+              "end": 146.3000000002794,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "start": 1047.8000000002794,
+              "end": 6550.100000000093,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/world-CJVTHipc.js",
+              "start": 1049.5,
+              "end": 1383.9000000003725,
+              "bytes": 39093,
+              "decoded": 38793,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1049.8000000002794,
+              "end": 2294.7000000001863,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1050,
+              "end": 3861.600000000093,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 6707.100000000093,
+              "end": 6753.100000000093,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "start": 6707.200000000186,
+              "end": 6767.5,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3101",
+          "ok": true,
+          "version": "B",
+          "brotli_supported": false,
+          "ready": 6900.300000000279,
+          "lcp": 500,
+          "longtask": 1304,
+          "fcp": 500,
+          "dcl": 478.40000000037253,
+          "load": 957.6000000000931,
+          "requests": 15,
+          "bytes_total": 3278189,
+          "bytes_by_type": {
+            "link": 42170,
+            "script": 1027081,
+            "other": 203221,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 6766
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 6751
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6547
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3859
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2308
+            }
+          ],
+          "home_ready": 1024,
+          "click_to_ready": 5869.800000000279,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3101/_next/static/css/index.Bsy8EddG.css",
+              "start": 41.40000000037253,
+              "end": 376,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 41.60000000009313,
+              "end": 83.5,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/index-BfMUb83_.js",
+              "start": 41.60000000009313,
+              "end": 916.1000000000931,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 41.700000000186265,
+              "end": 930.9000000003725,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/layout-segment-context-oL9HFSXL.js",
+              "start": 41.8000000002794,
+              "end": 83.70000000018626,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 41.8000000002794,
+              "end": 145.90000000037253,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/page-D3yP2ItK.js",
+              "start": 41.8000000002794,
+              "end": 237.90000000037253,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 41.90000000037253,
+              "end": 145.60000000009313,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "start": 1051.2000000001863,
+              "end": 6547.200000000186,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/world-CJVTHipc.js",
+              "start": 1052.7000000001863,
+              "end": 1393.5,
+              "bytes": 39093,
+              "decoded": 38793,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1052.8000000002794,
+              "end": 2307.8000000002794,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1052.9000000003725,
+              "end": 3858.9000000003725,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 6711.5,
+              "end": 6750.600000000093,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "start": 6711.700000000186,
+              "end": 6765.700000000186,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3101",
+          "ok": true,
+          "version": "B",
+          "brotli_supported": false,
+          "ready": 6852.600000000093,
+          "lcp": 484,
+          "longtask": 1265,
+          "fcp": 484,
+          "dcl": 469.5,
+          "load": 958.2000000001863,
+          "requests": 15,
+          "bytes_total": 3278189,
+          "bytes_by_type": {
+            "link": 42170,
+            "other": 203221,
+            "script": 1027081,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 6743
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 6728
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6526
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3836
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2302
+            }
+          ],
+          "home_ready": 1026.2000000001863,
+          "click_to_ready": 5821.800000000279,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3101/_next/static/css/index.Bsy8EddG.css",
+              "start": 46,
+              "end": 378.89999999990687,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/index-BfMUb83_.js",
+              "start": 46.10000000009313,
+              "end": 905,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 46.200000000186265,
+              "end": 87.60000000009313,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/layout-segment-context-oL9HFSXL.js",
+              "start": 46.200000000186265,
+              "end": 88.10000000009313,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 46.200000000186265,
+              "end": 935.6000000000931,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 46.299999999813735,
+              "end": 143.29999999981374,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/page-D3yP2ItK.js",
+              "start": 46.299999999813735,
+              "end": 240.20000000018626,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 46.39999999990687,
+              "end": 143.20000000018626,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "start": 1047.7999999998137,
+              "end": 6525.5,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/world-CJVTHipc.js",
+              "start": 1049.6000000000931,
+              "end": 1386.8999999999069,
+              "bytes": 39093,
+              "decoded": 38793,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1049.8999999999069,
+              "end": 2302.100000000093,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1050,
+              "end": 3836,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 6687,
+              "end": 6727.5,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "start": 6687.200000000186,
+              "end": 6742.700000000186,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3101",
+          "ok": true,
+          "version": "B",
+          "brotli_supported": false,
+          "ready": 6851.5,
+          "lcp": 472,
+          "longtask": 1299,
+          "fcp": 472,
+          "dcl": 455.60000000009313,
+          "load": 952.3999999999069,
+          "requests": 15,
+          "bytes_total": 3278189,
+          "bytes_by_type": {
+            "link": 42170,
+            "other": 203221,
+            "script": 1027081,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 6748
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 6734
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6530
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3843
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2294
+            }
+          ],
+          "home_ready": 1017.8000000002794,
+          "click_to_ready": 5828.100000000093,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3101/_next/static/css/index.Bsy8EddG.css",
+              "start": 49,
+              "end": 351.89999999990687,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/index-BfMUb83_.js",
+              "start": 49.10000000009313,
+              "end": 913.6000000000931,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 49.200000000186265,
+              "end": 87.8000000002794,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 49.3000000002794,
+              "end": 928.8999999999069,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/layout-segment-context-oL9HFSXL.js",
+              "start": 49.39999999990687,
+              "end": 103.8000000002794,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 49.39999999990687,
+              "end": 133.8000000002794,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/page-D3yP2ItK.js",
+              "start": 49.39999999990687,
+              "end": 257.60000000009313,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 49.5,
+              "end": 164.60000000009313,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "start": 1041.2000000001863,
+              "end": 6529.800000000279,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/world-CJVTHipc.js",
+              "start": 1043,
+              "end": 1379.3000000002794,
+              "bytes": 39093,
+              "decoded": 38793,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1043.1000000000931,
+              "end": 2293.899999999907,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1043.2000000001863,
+              "end": 3843.3000000002794,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 6690.899999999907,
+              "end": 6733.600000000093,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "start": 6691.200000000186,
+              "end": 6748.399999999907,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3101",
+          "ok": true,
+          "version": "B",
+          "brotli_supported": false,
+          "ready": 6857.200000000186,
+          "lcp": 480,
+          "longtask": 1318,
+          "fcp": 480,
+          "dcl": 458.20000000018626,
+          "load": 962.7999999998137,
+          "requests": 15,
+          "bytes_total": 3278189,
+          "bytes_by_type": {
+            "link": 42170,
+            "script": 1027081,
+            "other": 203221,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 6752
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 6736
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6533
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3862
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2311
+            }
+          ],
+          "home_ready": 1033.8999999999069,
+          "click_to_ready": 5817.300000000279,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3101/_next/static/css/index.Bsy8EddG.css",
+              "start": 44.5,
+              "end": 365,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 44.799999999813735,
+              "end": 86.60000000009313,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/index-BfMUb83_.js",
+              "start": 44.799999999813735,
+              "end": 908.5,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 44.799999999813735,
+              "end": 939.5,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/layout-segment-context-oL9HFSXL.js",
+              "start": 44.89999999990687,
+              "end": 86.79999999981374,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 45,
+              "end": 144,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 45,
+              "end": 144.20000000018626,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/page-D3yP2ItK.js",
+              "start": 45,
+              "end": 241,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "start": 1065.1000000000931,
+              "end": 6533.399999999907,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/world-CJVTHipc.js",
+              "start": 1066.7000000001863,
+              "end": 1407.5,
+              "bytes": 39093,
+              "decoded": 38793,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1066.8999999999069,
+              "end": 2310.600000000093,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1067.2000000001863,
+              "end": 3862.2000000001863,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 6694.899999999907,
+              "end": 6736.200000000186,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "start": 6695.200000000186,
+              "end": 6751.600000000093,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3101",
+          "ok": true,
+          "version": "B",
+          "brotli_supported": false,
+          "ready": 6828.399999999907,
+          "lcp": 492,
+          "longtask": 1313,
+          "fcp": 492,
+          "dcl": 473.1999999997206,
+          "load": 967.3999999999069,
+          "requests": 15,
+          "bytes_total": 3278189,
+          "bytes_by_type": {
+            "link": 42170,
+            "script": 1027081,
+            "other": 203221,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 6729
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 6715
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6514
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3842
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2296
+            }
+          ],
+          "home_ready": 1030.6999999997206,
+          "click_to_ready": 5792.0,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3101/_next/static/css/index.Bsy8EddG.css",
+              "start": 43.10000000009313,
+              "end": 360.60000000009313,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 43.299999999813735,
+              "end": 98.29999999981374,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/index-BfMUb83_.js",
+              "start": 43.299999999813735,
+              "end": 915.1999999997206,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 43.39999999990687,
+              "end": 945.3999999999069,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/layout-segment-context-oL9HFSXL.js",
+              "start": 43.6999999997206,
+              "end": 98.39999999990687,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/page-D3yP2ItK.js",
+              "start": 43.799999999813735,
+              "end": 268,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 43.89999999990687,
+              "end": 146.60000000009313,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 44,
+              "end": 158.6999999997206,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "start": 1060.2999999998137,
+              "end": 6513.5,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/world-CJVTHipc.js",
+              "start": 1061.6999999997206,
+              "end": 1392.7999999998137,
+              "bytes": 39093,
+              "decoded": 38793,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1061.8999999999069,
+              "end": 2295.6999999997206,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1062,
+              "end": 3842.2999999998137,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 6668.699999999721,
+              "end": 6714.899999999907,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "start": 6669.100000000093,
+              "end": 6729.399999999907,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3101",
+          "ok": true,
+          "version": "B",
+          "brotli_supported": false,
+          "ready": 6884.100000000093,
+          "lcp": 512,
+          "longtask": 1252,
+          "fcp": 512,
+          "dcl": 493.5,
+          "load": 977.8999999999069,
+          "requests": 15,
+          "bytes_total": 3278189,
+          "bytes_by_type": {
+            "link": 42170,
+            "other": 203221,
+            "script": 1027081,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 6783
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 6768
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6565
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3891
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2331
+            }
+          ],
+          "home_ready": 1051.1000000000931,
+          "click_to_ready": 5828.399999999907,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3101/_next/static/css/index.Bsy8EddG.css",
+              "start": 57.299999999813735,
+              "end": 393.5,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/index-BfMUb83_.js",
+              "start": 57.700000000186265,
+              "end": 924,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 57.799999999813735,
+              "end": 98.60000000009313,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 57.89999999990687,
+              "end": 955.1000000000931,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/layout-segment-context-oL9HFSXL.js",
+              "start": 58,
+              "end": 99.29999999981374,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 58,
+              "end": 160.60000000009313,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/page-D3yP2ItK.js",
+              "start": 58,
+              "end": 254.60000000009313,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 58.10000000009313,
+              "end": 160.29999999981374,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "start": 1075.3999999999069,
+              "end": 6564.5,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/world-CJVTHipc.js",
+              "start": 1078.1000000000931,
+              "end": 1421.2000000001863,
+              "bytes": 39093,
+              "decoded": 38793,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1078.2999999998137,
+              "end": 2330.5,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1078.6000000000931,
+              "end": 3890.5,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 6728.200000000186,
+              "end": 6768.200000000186,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "start": 6728.600000000093,
+              "end": 6782.5,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3101",
+          "ok": true,
+          "version": "B",
+          "brotli_supported": false,
+          "ready": 6866.299999999814,
+          "lcp": 540,
+          "longtask": 1317,
+          "fcp": 540,
+          "dcl": 507.20000000018626,
+          "load": 961.3999999999069,
+          "requests": 15,
+          "bytes_total": 3278189,
+          "bytes_by_type": {
+            "link": 42170,
+            "other": 203221,
+            "script": 1027081,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 6762
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 6747
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6528
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3844
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2303
+            }
+          ],
+          "home_ready": 1035.5,
+          "click_to_ready": 5824.699999999721,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3101/_next/static/css/index.Bsy8EddG.css",
+              "start": 51.700000000186265,
+              "end": 371.29999999981374,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/index-BfMUb83_.js",
+              "start": 52.10000000009313,
+              "end": 916,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 52.200000000186265,
+              "end": 92.70000000018626,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 52.200000000186265,
+              "end": 931.6000000000931,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/layout-segment-context-oL9HFSXL.js",
+              "start": 52.299999999813735,
+              "end": 92.79999999981374,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/page-D3yP2ItK.js",
+              "start": 52.299999999813735,
+              "end": 247.79999999981374,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 52.39999999990687,
+              "end": 145.70000000018626,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 52.39999999990687,
+              "end": 145.89999999990687,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "start": 1060.5,
+              "end": 6527.899999999907,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/world-CJVTHipc.js",
+              "start": 1062,
+              "end": 1394.1000000000931,
+              "bytes": 39093,
+              "decoded": 38793,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1062.3999999999069,
+              "end": 2302.600000000093,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1062.5,
+              "end": 3844.399999999907,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 6700.5,
+              "end": 6746.600000000093,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "start": 6700.799999999814,
+              "end": 6761.799999999814,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "http://127.0.0.1:3101",
+          "ok": true,
+          "version": "B",
+          "brotli_supported": false,
+          "ready": 6864.700000000186,
+          "lcp": 492,
+          "longtask": 1318,
+          "fcp": 492,
+          "dcl": 476.20000000018626,
+          "load": 958.8000000002794,
+          "requests": 15,
+          "bytes_total": 3278189,
+          "bytes_by_type": {
+            "link": 42170,
+            "script": 1027081,
+            "other": 203221,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 6751
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 6736
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6534
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 3857
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2317
+            }
+          ],
+          "home_ready": 1025.6000000000931,
+          "click_to_ready": 5832.0,
+          "resources": [
+            {
+              "name": "http://127.0.0.1:3101/_next/static/css/index.Bsy8EddG.css",
+              "start": 42.200000000186265,
+              "end": 376.10000000009313,
+              "bytes": 42170,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 42.5,
+              "end": 83.39999999990687,
+              "bytes": 994,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/index-BfMUb83_.js",
+              "start": 42.5,
+              "end": 903.3000000002794,
+              "bytes": 178644,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/layout-segment-context-oL9HFSXL.js",
+              "start": 42.60000000009313,
+              "end": 99.10000000009313,
+              "bytes": 789,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 42.60000000009313,
+              "end": 935,
+              "bytes": 190452,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 42.700000000186265,
+              "end": 145.20000000018626,
+              "bytes": 2909,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/page-D3yP2ItK.js",
+              "start": 42.700000000186265,
+              "end": 252.70000000018626,
+              "bytes": 19168,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 42.8000000002794,
+              "end": 160.39999999990687,
+              "bytes": 1711,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/traveler-male-web.vrm.bin",
+              "start": 1055,
+              "end": 6533.899999999907,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/world-CJVTHipc.js",
+              "start": 1056.6000000000931,
+              "end": 1401.5,
+              "bytes": 39093,
+              "decoded": 38793,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1056.8999999999069,
+              "end": 2316.7000000001863,
+              "bytes": 196733,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1056.8999999999069,
+              "end": 3857.3000000002794,
+              "bytes": 599809,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 6696,
+              "end": 6736,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "http://127.0.0.1:3101/models/nature-web/Flower_4_Group.gltf",
+              "start": 6696.300000000279,
+              "end": 6750.899999999907,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        }
+      ],
+      "summary": {
+        "n": 10,
+        "n_ok": 10,
+        "ready": {
+          "p50": 6864.6,
+          "p75": 6879.7,
+          "p95": 6929.5
+        },
+        "lcp": {
+          "p50": 494.0,
+          "p75": 509.0,
+          "p95": 548.8
+        },
+        "fcp": {
+          "p50": 494.0,
+          "p75": 509.0,
+          "p95": 548.8
+        },
+        "dcl": {
+          "p50": 475.5,
+          "p75": 489.7,
+          "p95": 524.5
+        },
+        "load": {
+          "p50": 960.4,
+          "p75": 966.2,
+          "p95": 1013.2
+        },
+        "longtask": {
+          "p50": 1308.5,
+          "p75": 1317.8,
+          "p95": 1319.7
+        },
+        "requests": {
+          "p50": 15.0,
+          "p75": 15.0,
+          "p95": 15.6
+        },
+        "bytes_total": {
+          "p50": 3278189.0,
+          "p75": 3278189.0,
+          "p95": 3279506.2
+        },
+        "click_to_ready": {
+          "p50": 5828.2,
+          "p75": 5833.4,
+          "p95": 5853.8
+        },
+        "home_ready": {
+          "p50": 1028.4,
+          "p75": 1035.1,
+          "p95": 1085.7
+        }
+      }
+    }
+  },
+  "finished": "2026-09-27 11:06:38"
+}
