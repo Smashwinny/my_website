@@ -1,0 +1,643 @@
+{
+  "started": "2026-09-27 11:28:21",
+  "config": {
+    "url": "https://geniusqi.com",
+    "url_b": null,
+    "scene": "garden",
+    "runs": 3,
+    "width": 1440,
+    "profile": "fast4g",
+    "out": "perf/bench/online-after.json"
+  },
+  "ready": "!!document.querySelector('.world canvas') && !document.querySelector('.world-loading,.scene-loading-note,.webgl-error,.asset-warning') && !!document.querySelector('.jump-button')",
+  "results": {
+    "A": {
+      "url": "https://geniusqi.com",
+      "runs": [
+        {
+          "url": "https://geniusqi.com",
+          "ok": true,
+          "version": "A",
+          "brotli_supported": false,
+          "ready": 7465.4000000003725,
+          "lcp": 1280,
+          "longtask": 2627,
+          "fcp": 1280,
+          "dcl": 1155.4000000003725,
+          "load": 1362.2000000001863,
+          "requests": 18,
+          "bytes_total": 2371169,
+          "bytes_by_type": {
+            "link": 11310,
+            "other": 66529,
+            "script": 287012,
+            "xmlhttprequest": 300,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "https://geniusqi.com/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 6524
+            },
+            {
+              "name": "https://geniusqi.com/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 6513
+            },
+            {
+              "name": "https://geniusqi.com/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6128
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/world-CJVTHipc.js",
+              "responseEnd": 2592
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 2514
+            }
+          ],
+          "home_ready": 1450.9000000003725,
+          "click_to_ready": 6007.5,
+          "resources": [
+            {
+              "name": "https://geniusqi.com/_next/static/css/index.Bsy8EddG.css",
+              "start": 693,
+              "end": 947.9000000003725,
+              "bytes": 11310,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/index-D9qCFGaD.js",
+              "start": 693.2999999998137,
+              "end": 1337,
+              "bytes": 53196,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 693.4000000003725,
+              "end": 932.9000000003725,
+              "bytes": 731,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/layout-segment-context-BrdzzNcY.js",
+              "start": 693.5,
+              "end": 1179.7999999998137,
+              "bytes": 640,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 693.5,
+              "end": 1257.6000000005588,
+              "bytes": 61103,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 693.6000000005588,
+              "end": 1164.7000000001863,
+              "bytes": 1782,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/page-ChZ-w5mG.js",
+              "start": 693.6000000005588,
+              "end": 1227.7000000001863,
+              "bytes": 7710,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 693.7000000001863,
+              "end": 1157.2999999998137,
+              "bytes": 859,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495",
+              "start": 693.7999999998137,
+              "end": 1149.6000000005588,
+              "bytes": 0,
+              "decoded": 0,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/cdn-cgi/rum?",
+              "start": 1368,
+              "end": 1615.6000000005588,
+              "bytes": 300,
+              "decoded": 0,
+              "type": "xmlhttprequest"
+            },
+            {
+              "name": "https://geniusqi.com/favicon.ico",
+              "start": 1369.7000000001863,
+              "end": 1631.2000000001863,
+              "bytes": 2342,
+              "decoded": 6286,
+              "type": "other"
+            },
+            {
+              "name": "https://geniusqi.com/models/traveler-male-web.vrm.bin",
+              "start": 1520.2000000001863,
+              "end": 6127.799999999814,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/world-CJVTHipc.js",
+              "start": 1521.9000000003725,
+              "end": 2591.7999999998137,
+              "bytes": 15321,
+              "decoded": 38793,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1522.2999999998137,
+              "end": 2019.5,
+              "bytes": 52398,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1522.4000000003725,
+              "end": 2513.5,
+              "bytes": 157459,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 6282.299999999814,
+              "end": 6513,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "https://geniusqi.com/models/nature-web/Flower_4_Group.gltf",
+              "start": 6282.4000000003725,
+              "end": 6524.100000000559,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "https://geniusqi.com",
+          "ok": true,
+          "version": "A",
+          "brotli_supported": false,
+          "ready": 6498.200000000186,
+          "lcp": 1128,
+          "longtask": 1119,
+          "fcp": 1128,
+          "dcl": 1310.9000000003725,
+          "load": 1376,
+          "requests": 17,
+          "bytes_total": 2368933,
+          "bytes_by_type": {
+            "link": 11329,
+            "other": 64187,
+            "script": 287073,
+            "xmlhttprequest": 300,
+            "fetch": 2001562
+          },
+          "slowest": [
+            {
+              "name": "https://geniusqi.com/models/nature-web/Flower_4_Group.gltf",
+              "responseEnd": 6575
+            },
+            {
+              "name": "https://geniusqi.com/models/nature-web/RockPath_Round_Wide.gltf",
+              "responseEnd": 6574
+            },
+            {
+              "name": "https://geniusqi.com/models/traveler-male-web.vrm.bin",
+              "responseEnd": 6155
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 2842
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 2362
+            }
+          ],
+          "home_ready": 1445.0999999996275,
+          "click_to_ready": 5046.200000000186,
+          "resources": [
+            {
+              "name": "https://geniusqi.com/_next/static/css/index.Bsy8EddG.css",
+              "start": 713.9000000003725,
+              "end": 1011.2999999998137,
+              "bytes": 11329,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/index-D9qCFGaD.js",
+              "start": 714.0999999996275,
+              "end": 1197.2000000001863,
+              "bytes": 53196,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 714.2000000001863,
+              "end": 996.4000000003725,
+              "bytes": 731,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/layout-segment-context-BrdzzNcY.js",
+              "start": 714.2999999998137,
+              "end": 1228.5,
+              "bytes": 640,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 714.2999999998137,
+              "end": 1354.2000000001863,
+              "bytes": 61103,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 714.4000000003725,
+              "end": 1243.7000000001863,
+              "bytes": 1782,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/page-ChZ-w5mG.js",
+              "start": 714.4000000003725,
+              "end": 1271.7000000001863,
+              "bytes": 7710,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 714.5,
+              "end": 1244,
+              "bytes": 859,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495",
+              "start": 715.5999999996275,
+              "end": 1306.4000000003725,
+              "bytes": 0,
+              "decoded": 0,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/cdn-cgi/rum?",
+              "start": 1380.7999999998137,
+              "end": 1618.2000000001863,
+              "bytes": 300,
+              "decoded": 0,
+              "type": "xmlhttprequest"
+            },
+            {
+              "name": "https://geniusqi.com/models/traveler-male-web.vrm.bin",
+              "start": 1471.9000000003725,
+              "end": 6155,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/world-CJVTHipc.js",
+              "start": 1473.2999999998137,
+              "end": 2156.5999999996275,
+              "bytes": 15334,
+              "decoded": 38793,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1473.5999999996275,
+              "end": 2361.5,
+              "bytes": 52446,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1473.7999999998137,
+              "end": 2842,
+              "bytes": 157459,
+              "decoded": 599509,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/models/nature-web/RockPath_Round_Wide.gltf",
+              "start": 6284.700000000186,
+              "end": 6573.5,
+              "bytes": 2733,
+              "decoded": 2433,
+              "type": "fetch"
+            },
+            {
+              "name": "https://geniusqi.com/models/nature-web/Flower_4_Group.gltf",
+              "start": 6284.799999999814,
+              "end": 6574.799999999814,
+              "bytes": 5062,
+              "decoded": 4762,
+              "type": "fetch"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        },
+        {
+          "url": "https://geniusqi.com",
+          "ok": true,
+          "version": "A",
+          "brotli_supported": false,
+          "ready": 5925.5,
+          "lcp": 872,
+          "longtask": 1206,
+          "fcp": 872,
+          "dcl": 1042.800000000745,
+          "load": 1042.9000000003725,
+          "requests": 15,
+          "bytes_total": 2361153,
+          "bytes_by_type": {
+            "link": 11310,
+            "script": 287105,
+            "other": 64242,
+            "xmlhttprequest": 300,
+            "fetch": 1993767
+          },
+          "slowest": [
+            {
+              "name": "https://geniusqi.com/models/traveler-male-web.vrm.bin",
+              "responseEnd": 5622
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/three.module-Djb60brg.js",
+              "responseEnd": 2248
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/characters-i8TstkDA.js",
+              "responseEnd": 1760
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/world-CJVTHipc.js",
+              "responseEnd": 1425
+            },
+            {
+              "name": "https://geniusqi.com/cdn-cgi/rum?",
+              "responseEnd": 1272
+            }
+          ],
+          "home_ready": 1090.800000000745,
+          "click_to_ready": 4828.899999999441,
+          "resources": [
+            {
+              "name": "https://geniusqi.com/_next/static/css/index.Bsy8EddG.css",
+              "start": 455.6000000005588,
+              "end": 758.2000000001863,
+              "bytes": 11310,
+              "decoded": 41870,
+              "type": "link"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+              "start": 456,
+              "end": 720.9000000003725,
+              "bytes": 731,
+              "decoded": 694,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/index-D9qCFGaD.js",
+              "start": 456,
+              "end": 961.2000000001863,
+              "bytes": 53251,
+              "decoded": 178344,
+              "type": "other"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/framework-BgSIrAUN.js",
+              "start": 456.1000000005588,
+              "end": 992.7000000001863,
+              "bytes": 61145,
+              "decoded": 190152,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/layout-segment-context-BrdzzNcY.js",
+              "start": 456.20000000018626,
+              "end": 724.5,
+              "bytes": 640,
+              "decoded": 489,
+              "type": "other"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/appearances-BULMG50O.js",
+              "start": 456.30000000074506,
+              "end": 757.9000000003725,
+              "bytes": 1782,
+              "decoded": 2609,
+              "type": "other"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/page-ChZ-w5mG.js",
+              "start": 456.30000000074506,
+              "end": 789,
+              "bytes": 7710,
+              "decoded": 18868,
+              "type": "other"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/projects-BHkgTbtS.js",
+              "start": 456.40000000037253,
+              "end": 743.7000000001863,
+              "bytes": 859,
+              "decoded": 1411,
+              "type": "other"
+            },
+            {
+              "name": "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495",
+              "start": 456.5,
+              "end": 1038.1000000005588,
+              "bytes": 0,
+              "decoded": 0,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/cdn-cgi/rum?",
+              "start": 1051.6000000005588,
+              "end": 1272.300000000745,
+              "bytes": 300,
+              "decoded": 0,
+              "type": "xmlhttprequest"
+            },
+            {
+              "name": "https://geniusqi.com/models/traveler-male-web.vrm.bin",
+              "start": 1117.9000000003725,
+              "end": 5621.5,
+              "bytes": 1993767,
+              "decoded": 1993467,
+              "type": "fetch"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/world-CJVTHipc.js",
+              "start": 1119.300000000745,
+              "end": 1425.4000000003725,
+              "bytes": 15324,
+              "decoded": 38793,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/characters-i8TstkDA.js",
+              "start": 1119.6000000005588,
+              "end": 1759.5,
+              "bytes": 52446,
+              "decoded": 196433,
+              "type": "script"
+            },
+            {
+              "name": "https://geniusqi.com/_next/static/chunks/three.module-Djb60brg.js",
+              "start": 1119.7000000001863,
+              "end": 2248.2000000001863,
+              "bytes": 157459,
+              "decoded": 599509,
+              "type": "script"
+            }
+          ],
+          "seo": {
+            "title": "GENIUSQI · 创作浮岛",
+            "description": "探索 Smashwinny 的 3D 作品浮岛，与小齐一起发现代码背后的想法。",
+            "canonical": null,
+            "links": [
+              [
+                "✦ GENIUSQITHE PERSONAL WORLD",
+                "/"
+              ],
+              [
+                "GitHub ↗",
+                "https://github.com/Smashwinny"
+              ]
+            ]
+          },
+          "canvas_changed_after_input": true,
+          "errors": []
+        }
+      ],
+      "summary": {
+        "n": 3,
+        "n_ok": 3,
+        "ready": {
+          "p50": 6498.2,
+          "p75": 6981.8,
+          "p95": 7368.7
+        },
+        "lcp": {
+          "p50": 1128.0,
+          "p75": 1204.0,
+          "p95": 1264.8
+        },
+        "fcp": {
+          "p50": 1128.0,
+          "p75": 1204.0,
+          "p95": 1264.8
+        },
+        "dcl": {
+          "p50": 1155.4,
+          "p75": 1233.2,
+          "p95": 1295.4
+        },
+        "load": {
+          "p50": 1362.2,
+          "p75": 1369.1,
+          "p95": 1374.6
+        },
+        "longtask": {
+          "p50": 1206.0,
+          "p75": 1916.5,
+          "p95": 2484.9
+        },
+        "requests": {
+          "p50": 17.0,
+          "p75": 17.5,
+          "p95": 17.9
+        },
+        "bytes_total": {
+          "p50": 2368933.0,
+          "p75": 2370051.0,
+          "p95": 2370945.4
+        },
+        "click_to_ready": {
+          "p50": 5046.2,
+          "p75": 5526.9,
+          "p95": 5911.4
+        },
+        "home_ready": {
+          "p50": 1445.1,
+          "p75": 1448.0,
+          "p95": 1450.3
+        }
+      }
+    }
+  },
+  "finished": "2026-09-27 11:28:46"
+}
